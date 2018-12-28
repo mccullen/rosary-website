@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { OriginAndNameComponent } from './origin-and-name/origin-and-name.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
+import { App } from './app';
 
 @NgModule({
   declarations: [
@@ -26,12 +27,12 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'origin-and-name', component: OriginAndNameComponent },
+      { path: OriginAndNameComponent.originAndNamePath, component: OriginAndNameComponent },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
     ])
   ],
-  providers: [],
+  providers: [App],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

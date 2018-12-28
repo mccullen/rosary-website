@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { OriginAndNameComponent } from '../origin-and-name/origin-and-name.component';
 
 @Component({
   selector: 'app-nav-menu',
@@ -7,6 +8,7 @@ import { Component } from '@angular/core';
 })
 export class NavMenuComponent {
   isExpanded = false;
+  originAndNamePath = OriginAndNameComponent.originAndNamePath;
 
   collapse() {
     this.isExpanded = false;

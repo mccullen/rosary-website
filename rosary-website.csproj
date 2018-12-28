@@ -10,6 +10,8 @@
 
     <!-- Set this to true if you enable server-side prerendering -->
     <BuildServerSideRenderer>false</BuildServerSideRenderer>
+	
+	<TypeScriptExperimentalDecorators>true</TypeScriptExperimentalDecorators>
   </PropertyGroup>
 
   <ItemGroup>
@@ -32,10 +34,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\app\app.ts" />
     <None Remove="ClientApp\src\app\origin-and-name\origin-and-name.component.ts" />
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\app\app.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\origin-and-name\origin-and-name.component.ts" />
   </ItemGroup>
 
