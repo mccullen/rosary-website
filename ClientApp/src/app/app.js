@@ -9,6 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var App = /** @class */ (function () {
     function App() {
+        this.secretOfTheRosaryLink = "http://www.montfortian.info/writings/the-admirable-secret-of-the-rosary.html";
     }
     App = __decorate([
         core_1.Injectable()

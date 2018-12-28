@@ -7,7 +7,9 @@ import { App } from '../app'
 })
 export class OriginAndNameComponent {
   static originAndNamePath: string = "origin-and-name";
+
   constructor(private app: App) { }
+
   get originAndNamePath() {
     return OriginAndNameComponent.originAndNamePath;
   }
