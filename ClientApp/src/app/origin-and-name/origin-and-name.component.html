@@ -12,6 +12,9 @@
   <li>
     <a [href]="mentalPrayers.path">{{ mentalPrayers.text }}</a>
   </li>
+  <li>
+    <a [href]="fruitOfTheMysteries.path">{{ fruitOfTheMysteries.text }}</a>
+  </li>
 </ul>
 
 <h2 [id]="whatIsTheRosary.id">{{ whatIsTheRosary.text }}</h2>
@@ -47,5 +50,11 @@
 <h2 [id]="mentalPrayers.id">{{ mentalPrayers.text }}</h2>
 <p>
   The mental prayers of the Rosary consists in meditating upon and contemplating the twenty mysteries of the chief mysteries of the life, ministry, death, and glory of Jesus Christ and His Blessed Mother at the same time the vocal prayers are being recited. 
+</p>
+<p>See the first Rose of <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary</a></p>
+
+<h2 [id]="fruitOfTheMysteries.id">{{ fruitOfTheMysteries.text }}</h2>
+<p>
+  The fruits of the Mysteries of the Rosary are the principle virtues which Jesus and Mary practiced and we seek to imitate.
 </p>
 <p>See the first Rose of <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary</a></p>

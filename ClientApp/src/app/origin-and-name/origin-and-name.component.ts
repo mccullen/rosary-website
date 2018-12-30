@@ -41,6 +41,14 @@ export class OriginAndNameComponent {
     }
   };
 
+  fruitOfTheMysteries: ContentItem = {
+    id: "fruit-of-the-mysteries",
+    text: "What are the fruits of the Mysteries of the Rosary?",
+    get path() {
+      return OriginAndNameComponent.originAndNamePath + "#" + this.id;
+    }
+  };
+
   constructor(private app: App) { }
 
   get originAndNamePath() {

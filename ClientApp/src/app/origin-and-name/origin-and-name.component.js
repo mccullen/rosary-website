@@ -38,6 +38,13 @@ var OriginAndNameComponent = /** @class */ (function () {
                 return OriginAndNameComponent_1.originAndNamePath + "#" + this.id;
             }
         };
+        this.fruitOfTheMysteries = {
+            id: "fruit-of-the-mysteries",
+            text: "What are the fruits of the Mysteries of the Rosary?",
+            get path() {
+                return OriginAndNameComponent_1.originAndNamePath + "#" + this.id;
+            }
+        };
     }
     OriginAndNameComponent_1 = OriginAndNameComponent;
     Object.defineProperty(OriginAndNameComponent.prototype, "originAndNamePath", {
