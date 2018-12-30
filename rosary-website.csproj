@@ -36,15 +36,13 @@
   <ItemGroup>
     <None Remove="ClientApp\src\app\app.ts" />
     <None Remove="ClientApp\src\app\origin-and-name\origin-and-name.component.ts" />
+    <None Remove="ClientApp\src\app\resources\content-item.ts" />
   </ItemGroup>
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\src\app\app.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\origin-and-name\origin-and-name.component.ts" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="ClientApp\src\app\resources\" />
+    <TypeScriptCompile Include="ClientApp\src\app\resources\content-item.ts" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

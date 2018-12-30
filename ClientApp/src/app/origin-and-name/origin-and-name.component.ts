@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { App } from '../app'
+import { App } from '../app';
+import { ContentItem } from '../resources/content-item';
 
 @Component({
   selector: 'origin-and-name',
@@ -7,6 +8,30 @@ import { App } from '../app'
 })
 export class OriginAndNameComponent {
   static originAndNamePath: string = "origin-and-name";
+
+  whatIsTheRosary: ContentItem = {
+    id: "what-is-the-rosary",
+    text: "What is the Rosary?",
+    get path() {
+      return OriginAndNameComponent.originAndNamePath + "#" + this.id;
+    }
+  };
+
+  kindsOfPrayer: ContentItem = {
+    id: "kinds-of-prayers",
+    text: "What kinds of prayer is the Rosary made up of?",
+    get path() {
+      return OriginAndNameComponent.originAndNamePath + "#" + this.id;
+    }
+  };
+
+  vocalPrayers: ContentItem = {
+    id: "vocal-prayers",
+    text: "What are the vocal prayers of the Rosary?",
+    get path() {
+      return OriginAndNameComponent.originAndNamePath + "#" + this.id;
+    }
+  };
 
   constructor(private app: App) { }
 
