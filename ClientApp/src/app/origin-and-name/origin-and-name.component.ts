@@ -33,6 +33,14 @@ export class OriginAndNameComponent {
     }
   };
 
+  mentalPrayers: ContentItem = {
+    id: "mental-prayers",
+    text: "What are the mental prayers of the Rosary?",
+    get path() {
+      return OriginAndNameComponent.originAndNamePath + "#" + this.id;
+    }
+  };
+
   constructor(private app: App) { }
 
   get originAndNamePath() {
