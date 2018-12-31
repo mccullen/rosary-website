@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { App } from '../app';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,7 @@ export class HomeComponent {
   mysteryLink: string;
   day: number;
 
-  constructor() {
+  constructor(private app: App) {
     this.day = new Date().getDay();
     if (this.joyfulMysteriesDay()) {
       this.mysterySeries = "Joyful Mysteries";
