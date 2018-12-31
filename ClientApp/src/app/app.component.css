@@ -6,5 +6,6 @@
 }
 
 footer q {
-  color: #660000 /* blood red */
+  color: #660000; /* blood red */
+  font-weight: bold;
 }
