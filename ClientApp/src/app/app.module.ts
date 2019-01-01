@@ -11,6 +11,7 @@ import { OriginAndNameComponent } from './origin-and-name/origin-and-name.compon
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { App } from './app';
+import { PrayWorthilyComponent } from './pray-worthily/pray-worthily.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { App } from './app';
     NavMenuComponent,
     HomeComponent,
     OriginAndNameComponent,
+    PrayWorthilyComponent,
     CounterComponent,
     FetchDataComponent
   ],
@@ -28,6 +30,7 @@ import { App } from './app';
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: OriginAndNameComponent.originAndNamePath, component: OriginAndNameComponent },
+      { path: PrayWorthilyComponent.prayWorthilyPath, component: PrayWorthilyComponent },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
     ])

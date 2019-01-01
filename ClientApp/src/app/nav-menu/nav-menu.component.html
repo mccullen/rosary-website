@@ -23,6 +23,11 @@
                     </a>
                 </li>
                 <li [routerLinkActive]='["link-active"]'>
+                    <a [routerLink]='["/" + prayWorthilyPath ]' (click)='collapse()'>
+                        <span class='glyphicon glyphicon-grain'></span> Pray it Worthily
+                    </a>
+                </li>
+                <li [routerLinkActive]='["link-active"]'>
                     <a [routerLink]='["/counter"]' (click)='collapse()'>
                         <span class='glyphicon glyphicon-education'></span> Counter
                     </a>
