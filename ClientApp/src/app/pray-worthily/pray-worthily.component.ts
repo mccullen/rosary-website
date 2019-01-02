@@ -1,5 +1,6 @@
-import { Component, Inject } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Component } from '@angular/core';
+import { ContentItem } from '../resources/content-item';
+import { PrayWorthilyService } from './pray-worthily.service';
 
 @Component({
   selector: 'pray-worthily',
@@ -7,13 +8,17 @@ import { HttpClient } from '@angular/common/http';
 })
 export class PrayWorthilyComponent {
   static prayWorthilyPath: string = "pray-worthily";
-  joyfulMysteriesPath: string;
 
-  constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
-    this.joyfulMysteriesPath = baseUrl + 'api/PrayWorthily/GetJoyfulMysteriesHandout';
-    http.get(this.joyfulMysteriesPath).subscribe(result => {
-      console.log("Successfully downloaded joyful mysteries");
-      console.log(result);
-    }, error => console.error(error));
+  joyfulMysteriesPath: string;
+  avoidDistractions: ContentItem = {
+    id: "avoid-distractions",
+    text: "How do you avoid distractions?",
+    get path() {
+      return PrayWorthilyComponent.prayWorthilyPath + "#" + this.id;
+    }
+  };
+
+  constructor(prayWorthilyService: PrayWorthilyService) {
+    this.joyfulMysteriesPath = prayWorthilyService.joyfulMysteriesPath;
   }
 }

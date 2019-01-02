@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { App } from '../app';
+import { AppService } from '../app.service';
 import { ContentItem } from '../resources/content-item';
 
 @Component({
@@ -49,7 +49,7 @@ export class OriginAndNameComponent {
     }
   };
 
-  constructor(private app: App) { }
+  constructor(app: AppService) { }
 
   get originAndNamePath() {
     return OriginAndNameComponent.originAndNamePath;
