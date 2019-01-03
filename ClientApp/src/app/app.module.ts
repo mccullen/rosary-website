@@ -12,6 +12,7 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { AppService } from './app.service';
 import { PrayWorthilyComponent } from './pray-worthily/pray-worthily.component';
+import { PrayWorthilyService } from './pray-worthily/pray-worthily.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,10 @@ import { PrayWorthilyComponent } from './pray-worthily/pray-worthily.component';
       { path: 'fetch-data', component: FetchDataComponent },
     ])
   ],
-  providers: [AppService],
+  providers: [
+    AppService,
+    PrayWorthilyService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

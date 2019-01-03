@@ -32,12 +32,14 @@
   <ItemGroup>
     <None Remove="ClientApp\src\app\app.service.ts" />
     <None Remove="ClientApp\src\app\origin-and-name\origin-and-name.component.ts" />
+    <None Remove="ClientApp\src\app\pray-worthily\pray-worthily.service.ts" />
     <None Remove="ClientApp\src\app\resources\content-item.ts" />
   </ItemGroup>
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\src\app\app.service.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\origin-and-name\origin-and-name.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\pray-worthily\pray-worthily.service.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\resources\content-item.ts" />
   </ItemGroup>
 
