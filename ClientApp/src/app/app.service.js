@@ -13,7 +13,6 @@ var core_1 = require("@angular/core");
 var AppService = /** @class */ (function () {
     function AppService(baseUrl) {
         this.secretOfTheRosaryLink = "http://www.montfortian.info/writings/the-admirable-secret-of-the-rosary.html";
-        debugger;
         this.baseUrl = baseUrl;
     }
     AppService = __decorate([

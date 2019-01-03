@@ -5,7 +5,7 @@ import { Injectable, Inject } from '@angular/core';
 export class PrayWorthilyService {
   joyfulMysteriesPath: string = "";
 
-  constructor(appService: AppService) {
+  constructor(private appService: AppService) {
     this.joyfulMysteriesPath = appService.baseUrl + 'api/PrayWorthily/GetJoyfulMysteriesHandout';
   }
 }

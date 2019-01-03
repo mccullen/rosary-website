@@ -49,7 +49,7 @@ export class OriginAndNameComponent {
     }
   };
 
-  constructor(app: AppService) { }
+  constructor(private app: AppService) { }
 
   get originAndNamePath() {
     return OriginAndNameComponent.originAndNamePath;

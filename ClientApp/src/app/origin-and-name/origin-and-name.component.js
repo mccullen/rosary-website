@@ -9,6 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var OriginAndNameComponent = /** @class */ (function () {
     function OriginAndNameComponent(app) {
+        this.app = app;
         this.whatIsTheRosary = {
             id: "what-is-the-rosary",
             text: "What is the Rosary?",

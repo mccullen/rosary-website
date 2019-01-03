@@ -7,5 +7,6 @@ import { AppService } from './app.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(app: AppService) { }
+  constructor(private app: AppService) {
+  }
 }
