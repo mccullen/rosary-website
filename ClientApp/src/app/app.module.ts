@@ -10,7 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { OriginAndNameComponent } from './origin-and-name/origin-and-name.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
-import { App } from './app';
+import { AppService } from './app.service';
 import { PrayWorthilyComponent } from './pray-worthily/pray-worthily.component';
 
 @NgModule({
@@ -35,7 +35,7 @@ import { PrayWorthilyComponent } from './pray-worthily/pray-worthily.component';
       { path: 'fetch-data', component: FetchDataComponent },
     ])
   ],
-  providers: [App],
+  providers: [AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
