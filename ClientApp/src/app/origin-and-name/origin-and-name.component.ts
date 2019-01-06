@@ -49,6 +49,14 @@ export class OriginAndNameComponent {
     }
   };
 
+  seriesOfTheRosary: ContentItem = {
+    id: "series-of-the-rosary",
+    text: "What are the four series of the Rosary?",
+    get path() {
+      return OriginAndNameComponent.originAndNamePath + "#" + this.id;
+    }
+  };
+
   constructor(private app: AppService) { }
 
   get originAndNamePath() {
