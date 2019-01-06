@@ -57,6 +57,14 @@ export class OriginAndNameComponent {
     }
   };
 
+  originOfTheRosary: ContentItem = {
+    id: "origin-of-the-rosary",
+    text: "What is the origin of the “Rosary”?",
+    get path() {
+      return OriginAndNameComponent.originAndNamePath + "#" + this.id;
+    }
+  };
+
   constructor(private app: AppService) { }
 
   get originAndNamePath() {

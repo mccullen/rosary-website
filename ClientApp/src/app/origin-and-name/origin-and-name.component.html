@@ -18,6 +18,9 @@
   <li>
     <a [href]="seriesOfTheRosary.path">{{ seriesOfTheRosary.text }}</a>
   </li>
+  <li>
+    <a [href]="originOfTheRosary.path">{{ originOfTheRosary.text }}</a>
+  </li>
 </ul>
 
 <h2 [id]="whatIsTheRosary.id">{{ whatIsTheRosary.text }}</h2>
@@ -72,3 +75,9 @@ The Twenty Mysteries of the Rosary are grouped into four series of five decades 
   <li>Sorrowful Mysteries: Mysteries of Jesus's passion and death</li>
   <li>Glorious Mysteries: Mysteries of Jesus's resurrection and glory</li>
 </ol>
+
+<h2 [id]="originOfTheRosary.id">{{ originOfTheRosary.text }}</h2>
+<p>
+  The origin of the Rosary is the Prayer of Christ and the Angelic Salutation.
+</p>
+<p>See the second Rose of <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary</a></p>
