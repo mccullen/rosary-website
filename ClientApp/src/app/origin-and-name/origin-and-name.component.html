@@ -21,6 +21,9 @@
   <li>
     <a [href]="originOfTheRosary.path">{{ originOfTheRosary.text }}</a>
   </li>
+  <li>
+    <a [href]="evolutionOfTheRosary.path">{{ evolutionOfTheRosary.text }}</a>
+  </li>
 </ul>
 
 <h2 [id]="whatIsTheRosary.id">{{ whatIsTheRosary.text }}</h2>
@@ -81,3 +84,33 @@ The Twenty Mysteries of the Rosary are grouped into four series of five decades 
   The origin of the Rosary is the Prayer of Christ and the Angelic Salutation.
 </p>
 <p>See the second Rose of <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary</a></p>
+
+<h2 [id]="evolutionOfTheRosary.id">{{ evolutionOfTheRosary.text }}</h2>
+<p>
+  <span class="def">1214:</span>
+  The Church received the Rosary in its present form after
+  St. Dominic received it from the Blessed Virgin to convert the Albigensians (who no longer exist)
+  and other sinners. (St. Louis-Marie de Montfort, <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary</a>,
+  Second Rose)
+</p>
+<p>
+  At this time, it was called the Psalter of Jesus and Mary because it had the same number of Angelic
+  Salutations as there are psalms in the Book of the Psalms of David (150). Since simple and uneducated
+  people could not say David’s Psalter, they would say the Psalter of Jesus and Mary instead
+  (St. Louis-Marie de Montfort, <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary</a>
+  , Sixth Rose).
+</p>
+<p>
+  <span class="def">1460:</span>
+  The Rosary, having lost its first fervor after a century, is restored by Blessed Alan de la Roche’s
+  preaching after Our Lord spoke to him in the Sacred Host and reproached him for not preaching the
+  Rosary despite his learning and understanding (St. Louis-Marie de Montfort,
+  <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary,</a> Fourth Rose).
+</p>
+<p>
+  <span class="def">2002:</span>
+  St. Pope John Paul II introduced the “Mysteries of Light” (the Luminous Mysteries) as an
+  optional series of mysteries in his Apostolic Letter on the Rosary,
+  <a [href]="app.onTheRosaryLink">Rosarium Virginis Mariae,</a>
+  and provides guidance on how to better pray the Rosary. 
+</p>

@@ -4,7 +4,8 @@ import { ContentItem } from '../resources/content-item';
 
 @Component({
   selector: 'origin-and-name',
-  templateUrl: './origin-and-name.component.html'
+  templateUrl: './origin-and-name.component.html',
+  styleUrls: [ './origin-and-name.component.css' ]
 })
 export class OriginAndNameComponent {
   static originAndNamePath: string = "origin-and-name";
@@ -60,6 +61,14 @@ export class OriginAndNameComponent {
   originOfTheRosary: ContentItem = {
     id: "origin-of-the-rosary",
     text: "What is the origin of the “Rosary”?",
+    get path() {
+      return OriginAndNameComponent.originAndNamePath + "#" + this.id;
+    }
+  };
+
+  evolutionOfTheRosary: ContentItem = {
+    id: "evolution-of-the-rosary",
+    text: "How has the Rosary evolved since its origins?",
     get path() {
       return OriginAndNameComponent.originAndNamePath + "#" + this.id;
     }

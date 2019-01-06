@@ -59,6 +59,13 @@ var OriginAndNameComponent = /** @class */ (function () {
                 return OriginAndNameComponent_1.originAndNamePath + "#" + this.id;
             }
         };
+        this.evolutionOfTheRosary = {
+            id: "evolution-of-the-rosary",
+            text: "How has the Rosary evolved since its origins?",
+            get path() {
+                return OriginAndNameComponent_1.originAndNamePath + "#" + this.id;
+            }
+        };
     }
     OriginAndNameComponent_1 = OriginAndNameComponent;
     Object.defineProperty(OriginAndNameComponent.prototype, "originAndNamePath", {
@@ -73,7 +80,8 @@ var OriginAndNameComponent = /** @class */ (function () {
     OriginAndNameComponent = OriginAndNameComponent_1 = __decorate([
         core_1.Component({
             selector: 'origin-and-name',
-            templateUrl: './origin-and-name.component.html'
+            templateUrl: './origin-and-name.component.html',
+            styleUrls: ['./origin-and-name.component.css']
         })
     ], OriginAndNameComponent);
     return OriginAndNameComponent;
