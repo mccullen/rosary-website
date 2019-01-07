@@ -115,6 +115,13 @@ var OriginAndNameComponent = /** @class */ (function () {
                 return OriginAndNameComponent_1.originAndNamePath + "#" + this.id;
             }
         };
+        this.whatDoesRosaryMean = {
+            id: "what-does-rosary-mean",
+            text: "What does the name “Rosary” mean?",
+            get path() {
+                return OriginAndNameComponent_1.originAndNamePath + "#" + this.id;
+            }
+        };
     }
     OriginAndNameComponent_1 = OriginAndNameComponent;
     Object.defineProperty(OriginAndNameComponent.prototype, "originAndNamePath", {

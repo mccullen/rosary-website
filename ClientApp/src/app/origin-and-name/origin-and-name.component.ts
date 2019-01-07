@@ -130,6 +130,14 @@ export class OriginAndNameComponent {
     }
   };
 
+  whatDoesRosaryMean: ContentItem = {
+    id: "what-does-rosary-mean",
+    text: "What does the name “Rosary” mean?",
+    get path() {
+      return OriginAndNameComponent.originAndNamePath + "#" + this.id;
+    }
+  };
+
   constructor(private app: AppService) { }
 
   get originAndNamePath() {
