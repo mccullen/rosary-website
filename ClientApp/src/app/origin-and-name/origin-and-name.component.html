@@ -51,6 +51,9 @@
   <li>
     <a [href]="crownOfRoses.path">{{ crownOfRoses.text }}</a>
   </li>
+  <li>
+    <a [href]="essenceOfRosary.path">{{ crownOfRoses.text }}</a>
+  </li>
 </ul>
 
 <h2 [id]="whatIsTheRosary.id">{{ whatIsTheRosary.text }}</h2>
@@ -198,3 +201,21 @@ The Twenty Mysteries of the Rosary are grouped into four series of five decades 
   <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary,</a>
   Seventh Rose)
 </p>
+
+<h2 [id]="essenceOfRosary.id">{{ essenceOfRosary.text }}</h2>
+<p>
+  The Rosary is essentially composed of an introduction followed by twenty “mysteries” (significant events or moments in the life of Jesus and Mary) which are contemplated over the vocal prayers
+</p>
+<ol>
+  <li>Vocal Prayers</li>
+  <ul>
+    <li>Hail Mary</li>
+    <li>Our Father</li>
+    <li>Glory Be to the Father</li>
+  </ul>
+  <li>
+    <a [href]="seriesOfTheRosary.path">
+      Meditations on the Gospel</a>
+     (The good news of our salvation through the life, ministry, passion, and resurrection of Jesus)
+  </li>
+</ol>

@@ -146,6 +146,14 @@ export class OriginAndNameComponent {
     }
   };
 
+  essenceOfRosary: ContentItem = {
+    id: "essence-of-rosary",
+    text: "What is the essence of the Rosary today?",
+    get path() {
+      return OriginAndNameComponent.originAndNamePath + "#" + this.id;
+    }
+  };
+
   constructor(private app: AppService) { }
 
   get originAndNamePath() {
