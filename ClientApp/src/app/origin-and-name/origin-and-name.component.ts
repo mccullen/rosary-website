@@ -74,6 +74,22 @@ export class OriginAndNameComponent {
     }
   };
 
+  whyStDominicRecievedRosary: ContentItem = {
+    id: "why-st-dominic-recieved-rosary",
+    text: "Why did St. Dominic received the Rosary?",
+    get path() {
+      return OriginAndNameComponent.originAndNamePath + "#" + this.id;
+    }
+  };
+
+  rosaryWeapon: ContentItem = {
+    id: "rosary-weapon",
+    text: "How did St. Dominic use the Rosary as a weapon?",
+    get path() {
+      return OriginAndNameComponent.originAndNamePath + "#" + this.id;
+    }
+  };
+
   constructor(private app: AppService) { }
 
   get originAndNamePath() {

@@ -66,6 +66,20 @@ var OriginAndNameComponent = /** @class */ (function () {
                 return OriginAndNameComponent_1.originAndNamePath + "#" + this.id;
             }
         };
+        this.whyStDominicRecievedRosary = {
+            id: "why-st-dominic-recieved-rosary",
+            text: "Why did St. Dominic received the Rosary?",
+            get path() {
+                return OriginAndNameComponent_1.originAndNamePath + "#" + this.id;
+            }
+        };
+        this.rosaryWeapon = {
+            id: "rosary-weapon",
+            text: "How did St. Dominic use the Rosary as a weapon?",
+            get path() {
+                return OriginAndNameComponent_1.originAndNamePath + "#" + this.id;
+            }
+        };
     }
     OriginAndNameComponent_1 = OriginAndNameComponent;
     Object.defineProperty(OriginAndNameComponent.prototype, "originAndNamePath", {
