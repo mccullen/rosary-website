@@ -7,9 +7,11 @@ Install Dependencies:
   - npm install @angular/cli@1.7.4
 
 Run:
+ - Launch Angular CLI development server from the ClientApp directory
+    - npm start
  - Open the csproj in visual studio
  - Run IIS Express
 
 Run Tests from the ClientApp directory:
- - ng test
- - ng e2e
+ - npm test
+ - npm e2e
