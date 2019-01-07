@@ -13,6 +13,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { AppService } from './app.service';
 import { PrayWorthilyComponent } from './pray-worthily/pray-worthily.component';
 import { PrayWorthilyService } from './pray-worthily/pray-worthily.service';
+import { PrayersComponent } from './prayers/prayers.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { PrayWorthilyService } from './pray-worthily/pray-worthily.service';
     NavMenuComponent,
     HomeComponent,
     OriginAndNameComponent,
+    PrayersComponent,
     PrayWorthilyComponent,
     CounterComponent,
     FetchDataComponent
@@ -31,6 +33,7 @@ import { PrayWorthilyService } from './pray-worthily/pray-worthily.service';
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: OriginAndNameComponent.originAndNamePath, component: OriginAndNameComponent },
+      { path: PrayersComponent.prayersPath, component: PrayersComponent },
       { path: PrayWorthilyComponent.prayWorthilyPath, component: PrayWorthilyComponent },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { OriginAndNameComponent } from '../origin-and-name/origin-and-name.component';
 import { PrayWorthilyComponent } from '../pray-worthily/pray-worthily.component';
+import { PrayersComponent } from '../prayers/prayers.component';
 
 @Component({
   selector: 'app-nav-menu',
@@ -11,6 +12,7 @@ export class NavMenuComponent {
   isExpanded = false;
   originAndNamePath = OriginAndNameComponent.originAndNamePath;
   prayWorthilyPath = PrayWorthilyComponent.prayWorthilyPath;
+  prayersPath = PrayersComponent.prayersPath;
 
   collapse() {
     this.isExpanded = false;
