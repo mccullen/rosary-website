@@ -9,3 +9,7 @@ Install Dependencies:
 Run:
  - Open the csproj in visual studio
  - Run IIS Express
+
+Run Tests from the ClientApp directory:
+ - ng test
+ - ng e2e
