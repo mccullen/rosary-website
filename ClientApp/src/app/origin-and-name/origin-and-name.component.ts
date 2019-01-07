@@ -90,6 +90,14 @@ export class OriginAndNameComponent {
     }
   };
 
+  weaponAgainstSin: ContentItem = {
+    id: "weapon-against-sin",
+    text: "Why is the Rosary a powerful weapon against sin?",
+    get path() {
+      return OriginAndNameComponent.originAndNamePath + "#" + this.id;
+    }
+  };
+
   constructor(private app: AppService) { }
 
   get originAndNamePath() {
