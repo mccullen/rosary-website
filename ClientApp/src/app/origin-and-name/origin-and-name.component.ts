@@ -98,6 +98,22 @@ export class OriginAndNameComponent {
     }
   };
 
+  rainFromHeaven: ContentItem = {
+    id: "rain-from-heaven",
+    text: "Why is the Angelic Salutation sometimes called “rain from heaven”?",
+    get path() {
+      return OriginAndNameComponent.originAndNamePath + "#" + this.id;
+    }
+  };
+
+  whyPrayHailMaryBeforeSermons: ContentItem = {
+    id: "why-pray-hail-mary-before-sermons",
+    text: "Why is the Hail Mary prayed before sermons?",
+    get path() {
+      return OriginAndNameComponent.originAndNamePath + "#" + this.id;
+    }
+  };
+
   constructor(private app: AppService) { }
 
   get originAndNamePath() {

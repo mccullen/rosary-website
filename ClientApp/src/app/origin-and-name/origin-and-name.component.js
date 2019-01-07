@@ -87,6 +87,20 @@ var OriginAndNameComponent = /** @class */ (function () {
                 return OriginAndNameComponent_1.originAndNamePath + "#" + this.id;
             }
         };
+        this.rainFromHeaven = {
+            id: "rain-from-heaven",
+            text: "Why is the Angelic Salutation sometimes called “rain from heaven”?",
+            get path() {
+                return OriginAndNameComponent_1.originAndNamePath + "#" + this.id;
+            }
+        };
+        this.whyPrayHailMaryBeforeSermons = {
+            id: "why-pray-hail-mary-before-sermons",
+            text: "Why is the Hail Mary prayed before sermons?",
+            get path() {
+                return OriginAndNameComponent_1.originAndNamePath + "#" + this.id;
+            }
+        };
     }
     OriginAndNameComponent_1 = OriginAndNameComponent;
     Object.defineProperty(OriginAndNameComponent.prototype, "originAndNamePath", {
