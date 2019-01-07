@@ -101,6 +101,20 @@ var OriginAndNameComponent = /** @class */ (function () {
                 return OriginAndNameComponent_1.originAndNamePath + "#" + this.id;
             }
         };
+        this.whyUrgeTheRosary = {
+            id: "why-urge-the-rosary",
+            text: "Why does urging people to pray the Rosary in sermons allow it to bear much fruit?",
+            get path() {
+                return OriginAndNameComponent_1.originAndNamePath + "#" + this.id;
+            }
+        };
+        this.whyPerserveranceIsImportant = {
+            id: "why-perserverence-is-important",
+            text: "Why is perseverance important in praying the Rosary?",
+            get path() {
+                return OriginAndNameComponent_1.originAndNamePath + "#" + this.id;
+            }
+        };
     }
     OriginAndNameComponent_1 = OriginAndNameComponent;
     Object.defineProperty(OriginAndNameComponent.prototype, "originAndNamePath", {

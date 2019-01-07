@@ -114,6 +114,22 @@ export class OriginAndNameComponent {
     }
   };
 
+  whyUrgeTheRosary: ContentItem = {
+    id: "why-urge-the-rosary",
+    text: "Why does urging people to pray the Rosary in sermons allow it to bear much fruit?",
+    get path() {
+      return OriginAndNameComponent.originAndNamePath + "#" + this.id;
+    }
+  };
+
+  whyPerserveranceIsImportant: ContentItem = {
+    id: "why-perserverence-is-important",
+    text: "Why is perseverance important in praying the Rosary?",
+    get path() {
+      return OriginAndNameComponent.originAndNamePath + "#" + this.id;
+    }
+  };
+
   constructor(private app: AppService) { }
 
   get originAndNamePath() {
