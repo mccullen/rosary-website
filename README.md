@@ -15,3 +15,5 @@ Run:
 Run Tests from the ClientApp directory:
  - npm test
  - npm e2e
+
+Template used: https://docs.microsoft.com/en-us/aspnet/core/client-side/spa/angular?view=aspnetcore-2.2&tabs=visual-studio
