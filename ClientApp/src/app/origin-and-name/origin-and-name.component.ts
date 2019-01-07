@@ -138,6 +138,14 @@ export class OriginAndNameComponent {
     }
   };
 
+  crownOfRoses: ContentItem = {
+    id: "crown-of-roses",
+    text: "Why is the Rosary a “Crown of Roses”?",
+    get path() {
+      return OriginAndNameComponent.originAndNamePath + "#" + this.id;
+    }
+  };
+
   constructor(private app: AppService) { }
 
   get originAndNamePath() {
