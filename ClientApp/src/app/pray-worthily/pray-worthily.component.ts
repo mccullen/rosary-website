@@ -28,6 +28,14 @@ export class PrayWorthilyComponent {
     }
   };
 
+  groupRosary: ContentItem = {
+    id: "group-rosary",
+    text: "How do you pray the Rosary in a Group?",
+    get path() {
+      return PrayWorthilyComponent.prayWorthilyPath + "#" + this.id;
+    }
+  };
+
   constructor(
       private prayWorthilyService: PrayWorthilyService,
       private appService: AppService) {
