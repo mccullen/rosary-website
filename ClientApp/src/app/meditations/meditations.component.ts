@@ -35,6 +35,14 @@ export class MeditationsComponent implements OnInit {
     }
   };
 
+  soulOfRosary: ContentItem = {
+    id: "soul-of-rosary",
+    text: "Why are the meditations sometimes called the “soul” of the Rosary?",
+    get path() {
+      return MeditationsComponent.meditationsPath + "#" + this.id;
+    }
+  };
+
   constructor(private appService: AppService) { }
 
   ngOnInit() {
