@@ -15,6 +15,7 @@ import { PrayWorthilyComponent } from './pray-worthily/pray-worthily.component';
 import { PrayWorthilyService } from './pray-worthily/pray-worthily.service';
 import { PrayersComponent } from './prayers/prayers.component';
 import { MeditationsComponent } from './meditations/meditations.component';
+import { WondersComponent } from './wonders/wonders.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MeditationsComponent } from './meditations/meditations.component';
     PrayWorthilyComponent,
     CounterComponent,
     FetchDataComponent,
-    MeditationsComponent
+    MeditationsComponent,
+    WondersComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -37,6 +39,7 @@ import { MeditationsComponent } from './meditations/meditations.component';
       { path: OriginAndNameComponent.originAndNamePath, component: OriginAndNameComponent },
       { path: PrayersComponent.prayersPath, component: PrayersComponent },
       { path: MeditationsComponent.meditationsPath, component: MeditationsComponent },
+      { path: WondersComponent.wondersPath, component: WondersComponent },
       { path: PrayWorthilyComponent.prayWorthilyPath, component: PrayWorthilyComponent },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },

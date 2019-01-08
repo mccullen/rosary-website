@@ -34,6 +34,11 @@
                     </a>
                 </li>
                 <li [routerLinkActive]='["link-active"]'>
+                    <a [routerLink]='["/" + wondersPath ]' (click)='collapse()'>
+                        <span class='glyphicon glyphicon-picture'></span> Wonders
+                    </a>
+                </li>
+                <li [routerLinkActive]='["link-active"]'>
                     <a [routerLink]='["/" + prayWorthilyPath ]' (click)='collapse()'>
                         <span class='glyphicon glyphicon-heart'></span> Pray it Worthily
                     </a>

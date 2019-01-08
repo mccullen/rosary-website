@@ -3,6 +3,7 @@ import { OriginAndNameComponent } from '../origin-and-name/origin-and-name.compo
 import { PrayWorthilyComponent } from '../pray-worthily/pray-worthily.component';
 import { PrayersComponent } from '../prayers/prayers.component';
 import { MeditationsComponent } from '../meditations/meditations.component';
+import { WondersComponent } from '../wonders/wonders.component';
 
 @Component({
   selector: 'app-nav-menu',
@@ -15,6 +16,7 @@ export class NavMenuComponent {
   prayWorthilyPath = PrayWorthilyComponent.prayWorthilyPath;
   prayersPath = PrayersComponent.prayersPath;
   meditationsPath = MeditationsComponent.meditationsPath;
+  wondersPath = WondersComponent.wondersPath;
 
   collapse() {
     this.isExpanded = false;
