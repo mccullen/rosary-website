@@ -19,6 +19,14 @@ export class WondersComponent implements OnInit {
     }
   };
 
+  fifteenPromises: ContentItem = {
+    id: "fifteen-promises",
+    text: "What are the 15 promises of the Rosary?",
+    get path() {
+      return WondersComponent.wondersPath + "#" + this.id;
+    }
+  };
+
   constructor(private appService: AppService) { }
 
   ngOnInit() {
