@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AppService } from '../app.service';
+import { ContentItem } from '../resources/content-item';
 
 @Component({
   selector: 'app-meditations',
@@ -9,6 +10,22 @@ import { AppService } from '../app.service';
 export class MeditationsComponent implements OnInit {
 
   static meditationsPath: string = "meditations";
+
+  whatIsAMystery: ContentItem = {
+    id: "what-is-a-mystery",
+    text: "What is a “mystery”?",
+    get path() {
+      return MeditationsComponent.meditationsPath + "#" + this.id;
+    }
+  };
+
+  howManyMysteries: ContentItem = {
+    id: "how-many-mysteries",
+    text: "How many mysteries are in the Rosary?",
+    get path() {
+      return MeditationsComponent.meditationsPath + "#" + this.id;
+    }
+  };
 
   constructor(private appService: AppService) { }
 

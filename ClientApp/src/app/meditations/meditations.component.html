@@ -1,5 +1,21 @@
 <h1>Meditations</h1>
 
 <ul>
-  <li></li>
+  <li>
+    <a [href]="whatIsAMystery.path">{{ whatIsAMystery.text }}</a>
+  </li>
+  <li>
+    <a [href]="howManyMysteries.path">{{ howManyMysteries.text }}</a>
+  </li>
 </ul>
+
+<h2 [id]="whatIsAMystery.id">{{ whatIsAMystery.text }}</h2>
+<p>
+  A significant event or moment in the life of Jesus and Mary
+  (The Holy See, <a [href]="appService.holySeeRosaryLink">The Mysteries of the Rosary</a>)
+</p>
+
+<h2 [id]="howManyMysteries.id">{{ howManyMysteries.text }}</h2>
+<p>
+  There are twenty mysteries in the Rosary.
+</p>
