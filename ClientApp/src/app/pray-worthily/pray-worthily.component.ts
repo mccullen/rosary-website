@@ -10,6 +10,7 @@ export class PrayWorthilyComponent {
   static prayWorthilyPath: string = "pray-worthily";
 
   joyfulMysteriesPath: string;
+
   avoidDistractions: ContentItem = {
     id: "avoid-distractions",
     text: "How do you avoid distractions?",
