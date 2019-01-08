@@ -8,10 +8,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var PrayersComponent = /** @class */ (function () {
-    function PrayersComponent() {
+    function PrayersComponent(appService) {
+        this.appService = appService;
+        this.vocalPrayers = {
+            id: "vocal-prayers",
+            text: "What are vocal prayers compose the Rosary?",
+            get path() {
+                return PrayersComponent_1.prayersPath + "#" + this.id;
+            }
+        };
     }
+    PrayersComponent_1 = PrayersComponent;
+    var PrayersComponent_1;
     PrayersComponent.prayersPath = "prayers";
-    PrayersComponent = __decorate([
+    PrayersComponent = PrayersComponent_1 = __decorate([
         core_1.Component({
             selector: "prayers",
             templateUrl: "./prayers.component.html"
