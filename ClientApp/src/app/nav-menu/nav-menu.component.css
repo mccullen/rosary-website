@@ -19,6 +19,16 @@ li.link-active a:focus {
     z-index: 1;
 }
 
+/* Add scroll bar to nav menu when page links do not fit on screen */
+.navbar {
+  overflow: auto;
+}
+
+.navbar-collapse {
+  max-height: calc(100vh - 60px);
+  overflow-y: auto;
+}
+
 @media (min-width: 768px) {
     /* On small screens, convert the nav menu to a vertical sidebar */
     .main-nav {
