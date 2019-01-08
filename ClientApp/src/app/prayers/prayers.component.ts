@@ -17,5 +17,21 @@ export class PrayersComponent {
     }
   };
 
+  otherPrayers: ContentItem = {
+    id: "other-prayers",
+    text: "Are there other prayers that compose the Rosary?",
+    get path() {
+      return PrayersComponent.prayersPath + "#" + this.id;
+    }
+  };
+
+  bodyOfRosary: ContentItem = {
+    id: "body-of-rosary",
+    text: "Why are the vocal prayers sometimes called the “body” of the Rosary?",
+    get path() {
+      return PrayersComponent.prayersPath + "#" + this.id;
+    }
+  };
+
   constructor(private appService: AppService) { }
 }

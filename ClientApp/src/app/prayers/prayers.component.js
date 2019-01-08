@@ -17,6 +17,20 @@ var PrayersComponent = /** @class */ (function () {
                 return PrayersComponent_1.prayersPath + "#" + this.id;
             }
         };
+        this.otherPrayers = {
+            id: "other-prayers",
+            text: "Are there other prayers that compose the Rosary?",
+            get path() {
+                return PrayersComponent_1.prayersPath + "#" + this.id;
+            }
+        };
+        this.bodyOfRosary = {
+            id: "body-of-rosary",
+            text: "Why are the vocal prayers sometimes called the “body” of the Rosary?",
+            get path() {
+                return PrayersComponent_1.prayersPath + "#" + this.id;
+            }
+        };
     }
     PrayersComponent_1 = PrayersComponent;
     var PrayersComponent_1;
