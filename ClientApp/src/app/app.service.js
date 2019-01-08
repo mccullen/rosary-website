@@ -16,6 +16,7 @@ var AppService = /** @class */ (function () {
         this.onTheRosaryLink = "https://w2.vatican.va/content/john-paul-ii/en/apost_letters/2002/documents/hf_jp-ii_apl_20021016_rosarium-virginis-mariae.html";
         this.holySeeRosaryLink = "http://www.vatican.va/special/rosary/documents/misteri_en.html";
         this.fifteenPromisesLink = "http://www.rosary-center.org/conprom.htm";
+        this.indulgencesLink = "https://www.rosarycenter.org/indulgences/";
         this.baseUrl = baseUrl;
     }
     AppService = __decorate([

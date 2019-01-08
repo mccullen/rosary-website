@@ -6,6 +6,9 @@
   <li>
     <a [href]="fifteenPromises.path">{{ fifteenPromises.text }}</a>
   </li>
+  <li>
+    <a [href]="indulgences.path">{{ indulgences.text }}</a>
+  </li>
 </ul>
 
 <h2 [id]="whatWondersid">{{ whatWonders.text }}</h2>
@@ -16,4 +19,9 @@
 <h2 [id]="fifteenPromises.id">{{ fifteenPromises.text }}</h2>
 <p>
   <a [href]="appService.fifteenPromisesLink">The 15 promises of the Rosary</a>
+</p>
+
+<h2 [id]="indulgences.id">{{ indulgences.text }}</h2>
+<p>
+  <a [href]="appService.indulgencesLink">Indulgences of the Rosary</a>
 </p>

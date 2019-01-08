@@ -11,6 +11,8 @@ export class AppService {
     "http://www.vatican.va/special/rosary/documents/misteri_en.html";
   fifteenPromisesLink: string =
     "http://www.rosary-center.org/conprom.htm";
+  indulgencesLink: string =
+    "https://www.rosarycenter.org/indulgences/";
 
   constructor(@Inject('BASE_URL') baseUrl: string) {
     this.baseUrl = baseUrl;

@@ -27,6 +27,14 @@ export class WondersComponent implements OnInit {
     }
   };
 
+  indulgences: ContentItem = {
+    id: "indulgences",
+    text: "What indulgences are attached to the rosary?",
+    get path() {
+      return WondersComponent.wondersPath + "#" + this.id;
+    }
+  };
+
   constructor(private appService: AppService) { }
 
   ngOnInit() {
