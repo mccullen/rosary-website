@@ -36,6 +36,14 @@ export class PrayWorthilyComponent {
     }
   };
 
+  handouts: ContentItem = {
+    id: "handouts",
+    text: "Do you have any handouts for praying the Rosary?",
+    get path() {
+      return PrayWorthilyComponent.prayWorthilyPath + "#" + this.id;
+    }
+  };
+
   constructor(
       private prayWorthilyService: PrayWorthilyService,
       private appService: AppService) {
