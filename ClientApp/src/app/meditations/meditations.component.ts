@@ -27,6 +27,14 @@ export class MeditationsComponent implements OnInit {
     }
   };
 
+  howAreMysteriesGrouped: ContentItem = {
+    id: "how-are-mysteries-grouoped",
+    text: "How are the mysteries grouped?",
+    get path() {
+      return MeditationsComponent.meditationsPath + "#" + this.id;
+    }
+  };
+
   constructor(private appService: AppService) { }
 
   ngOnInit() {
