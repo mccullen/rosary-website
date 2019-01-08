@@ -3,12 +3,29 @@
   <li>
     <a [href]="avoidDistractions.path">{{ avoidDistractions.text }}</a>
   </li>
+  <li>
+    <a [href]="methodsOfPraying.path">{{ methodsOfPraying.text }}</a>
+  </li>
 </ul>
 
 <h2 [id]="avoidDistractions.id">{{ avoidDistractions.text }}</h2>
 <p>
   Coming soon...
 </p>
+
+<h2 [id]="methodsOfPraying.id">{{ methodsOfPraying.text }}</h2>
+<ul>
+  <li>
+    <a [href]="appService.stMontfortMethodsOfPrayingLink">
+      St. Louis-Marie de Montfort's methods of praying the Rosary
+    </a>
+  </li>
+  <li>
+    <a [href]="appService.holySeeRosaryLink">
+      Holy See method of praying the Rosary
+    </a>
+  </li>
+</ul>
 
 
 <a [href]="joyfulMysteriesPath">Joyful Mysteries Download</a>

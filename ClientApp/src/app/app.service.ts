@@ -13,6 +13,8 @@ export class AppService {
     "http://www.rosary-center.org/conprom.htm";
   indulgencesLink: string =
     "https://www.rosarycenter.org/indulgences/";
+  stMontfortMethodsOfPrayingLink: string =
+    "http://www.montfortian.info/writings/methods-of-reciting-the-rosary.html";
 
   constructor(@Inject('BASE_URL') baseUrl: string) {
     this.baseUrl = baseUrl;

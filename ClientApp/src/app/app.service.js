@@ -17,6 +17,7 @@ var AppService = /** @class */ (function () {
         this.holySeeRosaryLink = "http://www.vatican.va/special/rosary/documents/misteri_en.html";
         this.fifteenPromisesLink = "http://www.rosary-center.org/conprom.htm";
         this.indulgencesLink = "https://www.rosarycenter.org/indulgences/";
+        this.stMontfortMethodsOfPrayingLink = "http://www.montfortian.info/writings/methods-of-reciting-the-rosary.html";
         this.baseUrl = baseUrl;
     }
     AppService = __decorate([

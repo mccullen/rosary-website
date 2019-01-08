@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ContentItem } from '../resources/content-item';
 import { PrayWorthilyService } from './pray-worthily.service';
+import { AppService } from '../app.service';
 
 @Component({
   selector: 'pray-worthily',
@@ -19,7 +20,17 @@ export class PrayWorthilyComponent {
     }
   };
 
-  constructor(prayWorthilyService: PrayWorthilyService) {
+  methodsOfPraying: ContentItem = {
+    id: "methods-of-praying",
+    text: "What methods are there for saying the Rosary?",
+    get path() {
+      return PrayWorthilyComponent.prayWorthilyPath + "#" + this.id;
+    }
+  };
+
+  constructor(
+      private prayWorthilyService: PrayWorthilyService,
+      private appService: AppService) {
     this.joyfulMysteriesPath = prayWorthilyService.joyfulMysteriesPath;
   }
 }
