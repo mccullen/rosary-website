@@ -154,7 +154,10 @@ export class OriginAndNameComponent {
     }
   };
 
-  constructor(private app: AppService) { }
+  app: AppService;
+  constructor(app: AppService) {
+    this.app = app;
+  }
 
   get originAndNamePath() {
     return OriginAndNameComponent.originAndNamePath;

@@ -9,8 +9,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var PrayWorthilyService = /** @class */ (function () {
     function PrayWorthilyService(appService) {
-        this.appService = appService;
         this.joyfulMysteriesPath = "";
+        this.appService = appService;
         this.joyfulMysteriesPath = appService.baseUrl + 'api/PrayWorthily/GetJoyfulMysteriesHandout';
     }
     PrayWorthilyService = __decorate([

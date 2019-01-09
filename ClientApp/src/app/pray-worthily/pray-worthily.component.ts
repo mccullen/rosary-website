@@ -43,10 +43,14 @@ export class PrayWorthilyComponent {
       return PrayWorthilyComponent.prayWorthilyPath + "#" + this.id;
     }
   };
+    prayWorthilyService: PrayWorthilyService;
+    appService: AppService;
 
   constructor(
-      private prayWorthilyService: PrayWorthilyService,
-      private appService: AppService) {
+      prayWorthilyService: PrayWorthilyService,
+      appService: AppService) {
+    this.prayWorthilyService = prayWorthilyService;
+    this.appService = appService;
     this.joyfulMysteriesPath = prayWorthilyService.joyfulMysteriesPath;
   }
 }

@@ -9,7 +9,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var PrayersComponent = /** @class */ (function () {
     function PrayersComponent(appService) {
-        this.appService = appService;
         this.vocalPrayers = {
             id: "vocal-prayers",
             text: "What are vocal prayers compose the Rosary?",
@@ -31,6 +30,7 @@ var PrayersComponent = /** @class */ (function () {
                 return PrayersComponent_1.prayersPath + "#" + this.id;
             }
         };
+        this.appService = appService;
     }
     PrayersComponent_1 = PrayersComponent;
     var PrayersComponent_1;

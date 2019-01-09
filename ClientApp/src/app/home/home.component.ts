@@ -10,8 +10,10 @@ export class HomeComponent {
   mysterySeries: string;
   mysteryLink: string;
   day: number;
+    app: AppService;
 
-  constructor(private app: AppService) {
+  constructor(app: AppService) {
+    this.app = app;
     this.day = new Date().getDay();
     if (this.joyfulMysteriesDay()) {
       this.mysterySeries = "Joyful Mysteries";

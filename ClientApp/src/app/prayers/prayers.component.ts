@@ -32,6 +32,9 @@ export class PrayersComponent {
       return PrayersComponent.prayersPath + "#" + this.id;
     }
   };
+    appService: AppService;
 
-  constructor(private appService: AppService) { }
+  constructor(appService: AppService) {
+    this.appService = appService;
+  }
 }

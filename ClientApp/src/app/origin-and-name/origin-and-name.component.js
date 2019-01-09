@@ -9,7 +9,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var OriginAndNameComponent = /** @class */ (function () {
     function OriginAndNameComponent(app) {
-        this.app = app;
         this.whatIsTheRosary = {
             id: "what-is-the-rosary",
             text: "What is the Rosary?",
@@ -136,6 +135,7 @@ var OriginAndNameComponent = /** @class */ (function () {
                 return OriginAndNameComponent_1.originAndNamePath + "#" + this.id;
             }
         };
+        this.app = app;
     }
     OriginAndNameComponent_1 = OriginAndNameComponent;
     Object.defineProperty(OriginAndNameComponent.prototype, "originAndNamePath", {

@@ -34,8 +34,11 @@ export class WondersComponent implements OnInit {
       return WondersComponent.wondersPath + "#" + this.id;
     }
   };
+    appService: AppService;
 
-  constructor(private appService: AppService) { }
+  constructor(appService: AppService) {
+    this.appService = appService;
+  }
 
   ngOnInit() {
   }

@@ -42,8 +42,11 @@ export class MeditationsComponent implements OnInit {
       return MeditationsComponent.meditationsPath + "#" + this.id;
     }
   };
+    appService: AppService;
 
-  constructor(private appService: AppService) { }
+  constructor(appService: AppService) {
+    this.appService = appService;
+  }
 
   ngOnInit() {
   }
