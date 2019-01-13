@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { myId } from '../a-link/a-link.component';
 
 @Component({
   selector: 'app-b-body',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./b-body.component.css']
 })
 export class BBodyComponent implements OnInit {
-
+  bodyId: string = myId;
   constructor() { }
 
   ngOnInit() {
