@@ -1,5 +1,8 @@
 import { AppService } from '../app.service';
 import { Injectable, Inject } from '@angular/core';
+import { ContentItem } from '../resources/content-item';
+import { PrayersComponent } from '../prayers/prayers.component';
+
 
 @Injectable()
 export class PrayWorthilyService {

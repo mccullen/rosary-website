@@ -16,6 +16,12 @@ import { PrayWorthilyService } from './pray-worthily/pray-worthily.service';
 import { PrayersComponent } from './prayers/prayers.component';
 import { MeditationsComponent } from './meditations/meditations.component';
 import { WondersComponent } from './wonders/wonders.component';
+import { AvoidDistractionsComponent } from './pray-worthily/avoid-distractions/avoid-distractions.component';
+import { TemplateDirective } from './pray-worthily/template.directive';
+import { ALinkComponent } from './pray-worthily/a-link/a-link.component';
+import { ABodyComponent } from './pray-worthily/a-body/a-body.component';
+import { BBodyComponent } from './pray-worthily/b-body/b-body.component';
+import { BLinkComponent } from './pray-worthily/b-link/b-link.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +34,13 @@ import { WondersComponent } from './wonders/wonders.component';
     CounterComponent,
     FetchDataComponent,
     MeditationsComponent,
-    WondersComponent
+    WondersComponent,
+    AvoidDistractionsComponent,
+    TemplateDirective,
+    ALinkComponent,
+    ABodyComponent,
+    BBodyComponent,
+    BLinkComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -49,6 +61,12 @@ import { WondersComponent } from './wonders/wonders.component';
     AppService,
     PrayWorthilyService
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    ALinkComponent,
+    ABodyComponent,
+    BLinkComponent,
+    BBodyComponent
+  ]
 })
 export class AppModule { }

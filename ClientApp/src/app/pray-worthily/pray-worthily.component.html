@@ -1,4 +1,10 @@
 <h1>Pray Worthily</h1>
+
+<ng-template appTemplate #toc=myTemplate></ng-template>
+<ng-template appTemplate #bodys=myTemplate></ng-template>
+
+<hr>
+
 <ul>
   <li>
     <a [href]="avoidDistractions.path">{{ avoidDistractions.text }}</a>
@@ -14,10 +20,12 @@
   </li>
 </ul>
 
-<h2 [id]="avoidDistractions.id">{{ avoidDistractions.text }}</h2>
+<!--<app-avoid-distractions [avoidDistractions]="avoidDistractions"></app-avoid-distractions>-->
+
+<!--<h2 [id]="avoidDistractions.id">{{ avoidDistractions.text }}</h2>
 <p>
   Coming soon...
-</p>
+</p>-->
 
 <h2 [id]="methodsOfPraying.id">{{ methodsOfPraying.text }}</h2>
 <ul>
