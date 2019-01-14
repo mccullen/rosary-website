@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild, ComponentFactoryResolver } from '@angular
 import { ContentItem } from '../resources/content-item';
 import { PrayWorthilyService } from './pray-worthily.service';
 import { AppService } from '../app.service';
-import { TemplateDirective } from './template.directive';
+import { TemplateDirective } from '../resources/template.directive';
 import { ALinkComponent } from './a-link/a-link.component';
 import { ABodyComponent } from './a-body/a-body.component';
 import { BLinkComponent } from './b-link/b-link.component';
