@@ -16,6 +16,8 @@ import { PrayWorthilyService } from './pray-worthily/pray-worthily.service';
 import { PrayersComponent } from './prayers/prayers.component';
 import { MeditationsComponent } from './meditations/meditations.component';
 import { WondersComponent } from './wonders/wonders.component';
+import { PurityOfIntentionComponent } from './prayers/purity-of-intention/purity-of-intention.component';
+import { SayAdvantageouslyComponent } from './pray-worthily/purity-of-intention/say-advantageously/say-advantageously.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { WondersComponent } from './wonders/wonders.component';
     CounterComponent,
     FetchDataComponent,
     MeditationsComponent,
-    WondersComponent
+    WondersComponent,
+    PurityOfIntentionComponent,
+    SayAdvantageouslyComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
