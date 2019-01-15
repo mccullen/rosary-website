@@ -43,12 +43,10 @@ export class PrayWorthilyComponent {
       return PrayWorthilyComponent.prayWorthilyPath + "#" + this.id;
     }
   };
-    prayWorthilyService: PrayWorthilyService;
-    appService: AppService;
 
   constructor(
-      prayWorthilyService: PrayWorthilyService,
-      appService: AppService) {
+      public prayWorthilyService: PrayWorthilyService,
+      public appService: AppService) {
     this.prayWorthilyService = prayWorthilyService;
     this.appService = appService;
     this.joyfulMysteriesPath = prayWorthilyService.joyfulMysteriesPath;
