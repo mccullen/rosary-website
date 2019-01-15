@@ -1,13 +1,6 @@
 <h1>Pray Worthily</h1>
 <ul>
-  <li>
-    <a [href]="purityOfIntention.path">{{ purityOfIntention.text }}</a>
-    <ul>
-      <li>
-        <a></a>
-      </li>
-    </ul>
-  </li>
+  <app-li-purity-of-intention></app-li-purity-of-intention>
   <li>
     <a [href]="avoidDistractions.path">{{ avoidDistractions.text }}</a>
   </li>
@@ -22,7 +15,7 @@
   </li>
 </ul>
 
-<app-purity-of-intention></app-purity-of-intention>
+<app-content-purity-of-intention></app-content-purity-of-intention>
 
 <h2 [id]="avoidDistractions.id">{{ avoidDistractions.text }}</h2>
 <p>

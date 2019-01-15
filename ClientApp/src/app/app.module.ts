@@ -16,8 +16,11 @@ import { PrayWorthilyService } from './pray-worthily/pray-worthily.service';
 import { PrayersComponent } from './prayers/prayers.component';
 import { MeditationsComponent } from './meditations/meditations.component';
 import { WondersComponent } from './wonders/wonders.component';
-import { PurityOfIntentionComponent } from './prayers/purity-of-intention/purity-of-intention.component';
-import { SayAdvantageouslyComponent } from './pray-worthily/purity-of-intention/say-advantageously/say-advantageously.component';
+import { LiPurityOfIntentionComponent } from './pray-worthily/purity-of-intention/li-purity-of-intention/li-purity-of-intention.component';
+import { ContentPurityOfIntentionComponent } from './pray-worthily/purity-of-intention/content-purity-of-intention/content-purity-of-intention.component';
+import { LiSayAdvantageouslyComponent } from './pray-worthily/purity-of-intention/li-purity-of-intention/li-say-advantageously/li-say-advantageously.component';
+import { ContentSayAdvantageouslyComponent } from './pray-worthily/purity-of-intention/content-purity-of-intention/content-say-advantageously/content-say-advantageously.component';
+import { PurityOfIntentionService } from './pray-worthily/purity-of-intention/purity-of-intention.service';
 
 @NgModule({
   declarations: [
@@ -31,8 +34,10 @@ import { SayAdvantageouslyComponent } from './pray-worthily/purity-of-intention/
     FetchDataComponent,
     MeditationsComponent,
     WondersComponent,
-    PurityOfIntentionComponent,
-    SayAdvantageouslyComponent
+    LiPurityOfIntentionComponent,
+    ContentPurityOfIntentionComponent,
+    LiSayAdvantageouslyComponent,
+    ContentSayAdvantageouslyComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -51,7 +56,8 @@ import { SayAdvantageouslyComponent } from './pray-worthily/purity-of-intention/
   ],
   providers: [
     AppService,
-    PrayWorthilyService
+    PrayWorthilyService,
+    PurityOfIntentionService
   ],
   bootstrap: [AppComponent]
 })
