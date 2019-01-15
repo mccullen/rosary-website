@@ -7,6 +7,7 @@ import { ALinkComponent } from './a-link/a-link.component';
 import { ABodyComponent } from './a-body/a-body.component';
 import { BLinkComponent } from './b-link/b-link.component';
 import { BBodyComponent } from './b-body/b-body.component';
+import { TableOfContentsComponent } from '../resources/table-of-contents/table-of-contents.component';
 
 let contentItems: ContentItem[] = [
   {
@@ -14,14 +15,22 @@ let contentItems: ContentItem[] = [
     text: "this is text a",
     path: "",
     linkComponent: ALinkComponent,
-    bodyComponent: ABodyComponent
+    bodyComponent: ABodyComponent,
+    children: [
+      {
+        linkComponent: ALinkComponent,
+        bodyComponent: ABodyComponent,
+        children: []
+      }
+    ]
   },
   {
     id: "b",
     text: "this is text b",
     path: "",
     linkComponent: BLinkComponent,
-    bodyComponent: BBodyComponent
+    bodyComponent: BBodyComponent,
+    children: []
   }
 ];
 
@@ -36,7 +45,7 @@ export class PrayWorthilyComponent implements OnInit {
   @ViewChild("bodys") bodys: TemplateDirective;
 
   joyfulMysteriesPath: string;
-  contentItems: any;
+  contentItems = contentItems;
 
   avoidDistractions: ContentItem = {
     id: "avoid-distractions",
@@ -82,6 +91,7 @@ export class PrayWorthilyComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.contentItems = contentItems;
     for (let contentItem of contentItems) {
       let linkComponentFactory =
         this.componentFactoryResolver.resolveComponentFactory(contentItem.linkComponent);
