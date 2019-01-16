@@ -47,8 +47,6 @@ export class PrayWorthilyComponent {
   constructor(
       public prayWorthilyService: PrayWorthilyService,
       public appService: AppService) {
-    this.prayWorthilyService = prayWorthilyService;
-    this.appService = appService;
     this.joyfulMysteriesPath = prayWorthilyService.joyfulMysteriesPath;
   }
 }

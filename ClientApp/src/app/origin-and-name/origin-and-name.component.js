@@ -7,8 +7,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var content_item_1 = require("../resources/content-item");
 var OriginAndNameComponent = /** @class */ (function () {
     function OriginAndNameComponent(app) {
+        this.prayers = new content_item_1.DefaultContentItem("origin-and-name-prayers", "Prayers", OriginAndNameComponent_1.originAndNamePath);
         this.whatIsTheRosary = {
             id: "what-is-the-rosary",
             text: "What is the Rosary?",

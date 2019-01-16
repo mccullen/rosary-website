@@ -1,9 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var ContentItem = /** @class */ (function () {
-    function ContentItem() {
+var DefaultContentItem = /** @class */ (function () {
+    function DefaultContentItem(id, text, pathPrefix) {
+        this.id = id;
+        this.text = text;
+        this.path = pathPrefix + "#" + this.id;
     }
-    return ContentItem;
+    return DefaultContentItem;
 }());
-exports.ContentItem = ContentItem;
-//# sourceMappingURL=ContentItem.js.map
+exports.DefaultContentItem = DefaultContentItem;
+//# sourceMappingURL=content-item.js.map

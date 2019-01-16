@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { AppService } from '../app.service';
-import { ContentItem } from '../resources/content-item';
+import { ContentItem, DefaultContentItem } from '../resources/content-item';
 
 @Component({
   selector: 'origin-and-name',
@@ -9,6 +9,9 @@ import { ContentItem } from '../resources/content-item';
 })
 export class OriginAndNameComponent {
   static originAndNamePath: string = "origin-and-name";
+
+  prayers: DefaultContentItem = new DefaultContentItem(
+    "origin-and-name-prayers", "Prayers", OriginAndNameComponent.originAndNamePath);
 
   whatIsTheRosary: ContentItem = {
     id: "what-is-the-rosary",
