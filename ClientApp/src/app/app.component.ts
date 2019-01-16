@@ -18,6 +18,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.addOnScrollListener();
+    console.log("%c@%c}-,-`-", "color: red; font-size: 20px;", "color: green; font-size: 20px");
   }
 
   private addOnScrollListener() {
