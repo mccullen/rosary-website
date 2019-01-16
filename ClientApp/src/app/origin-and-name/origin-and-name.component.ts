@@ -10,8 +10,20 @@ import { ContentItem, DefaultContentItem } from '../resources/content-item';
 export class OriginAndNameComponent {
   static originAndNamePath: string = "origin-and-name";
 
-  prayers: DefaultContentItem = new DefaultContentItem(
-    "origin-and-name-prayers", "Prayers", OriginAndNameComponent.originAndNamePath);
+  prayers: ContentItem = new DefaultContentItem(
+    "origin-and-name-prayers",
+    "Prayers",
+    OriginAndNameComponent.originAndNamePath);
+
+  originAndName: ContentItem = new DefaultContentItem(
+    "origin-and-name",
+    "Origin and Name",
+    OriginAndNameComponent.originAndNamePath);
+
+  stDominic: ContentItem = new DefaultContentItem(
+    "st-dominic",
+    "St. Dominic",
+    OriginAndNameComponent.originAndNamePath);
 
   whatIsTheRosary: ContentItem = {
     id: "what-is-the-rosary",
@@ -157,12 +169,6 @@ export class OriginAndNameComponent {
     }
   };
 
-  app: AppService;
-  constructor(app: AppService) {
-    this.app = app;
-  }
-
-  get originAndNamePath() {
-    return OriginAndNameComponent.originAndNamePath;
+  constructor(public app: AppService) {
   }
 }

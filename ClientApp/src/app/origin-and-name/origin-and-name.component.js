@@ -10,7 +10,10 @@ var core_1 = require("@angular/core");
 var content_item_1 = require("../resources/content-item");
 var OriginAndNameComponent = /** @class */ (function () {
     function OriginAndNameComponent(app) {
+        this.app = app;
         this.prayers = new content_item_1.DefaultContentItem("origin-and-name-prayers", "Prayers", OriginAndNameComponent_1.originAndNamePath);
+        this.originAndName = new content_item_1.DefaultContentItem("origin-and-name", "Origin and Name", OriginAndNameComponent_1.originAndNamePath);
+        this.stDominic = new content_item_1.DefaultContentItem("st-dominic", "St. Dominic", OriginAndNameComponent_1.originAndNamePath);
         this.whatIsTheRosary = {
             id: "what-is-the-rosary",
             text: "What is the Rosary?",
@@ -137,16 +140,8 @@ var OriginAndNameComponent = /** @class */ (function () {
                 return OriginAndNameComponent_1.originAndNamePath + "#" + this.id;
             }
         };
-        this.app = app;
     }
     OriginAndNameComponent_1 = OriginAndNameComponent;
-    Object.defineProperty(OriginAndNameComponent.prototype, "originAndNamePath", {
-        get: function () {
-            return OriginAndNameComponent_1.originAndNamePath;
-        },
-        enumerable: true,
-        configurable: true
-    });
     var OriginAndNameComponent_1;
     OriginAndNameComponent.originAndNamePath = "origin-and-name";
     OriginAndNameComponent = OriginAndNameComponent_1 = __decorate([

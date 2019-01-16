@@ -4,7 +4,7 @@ export interface ContentItem {
   path: string;
 }
 
-export class DefaultContentItem {
+export class DefaultContentItem implements ContentItem {
   id: string;
   text: string;
   path: string;

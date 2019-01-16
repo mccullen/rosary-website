@@ -1,5 +1,5 @@
 <h1>Origin and Name</h1>
-<ul>
+<ul class="rose-contents">
   <li>
     <a [href]="prayers.path">{{ prayers.text }}</a>
     <ul>
@@ -24,28 +24,38 @@
     </ul>
   </li>
   <li>
-    <a [href]="originOfTheRosary.path">{{ originOfTheRosary.text }}</a>
+    <a [href]="originAndName.path">{{ originAndName.text }}</a>
+    <ul>
+      <li>
+        <a [href]="originOfTheRosary.path">{{ originOfTheRosary.text }}</a>
+      </li>
+      <li>
+        <a [href]="evolutionOfTheRosary.path">{{ evolutionOfTheRosary.text }}</a>
+      </li>
+    </ul>
   </li>
   <li>
-    <a [href]="evolutionOfTheRosary.path">{{ evolutionOfTheRosary.text }}</a>
-  </li>
-  <li>
-    <a [href]="whyStDominicRecievedRosary.path">{{ whyStDominicRecievedRosary.text }}</a>
-  </li>
-  <li>
-    <a [href]="rosaryWeapon.path">{{ rosaryWeapon.text }}</a>
-  </li>
-  <li>
-    <a [href]="weaponAgainstSin.path">{{ weaponAgainstSin.text }}</a>
-  </li>
-  <li>
-    <a [href]="rainFromHeaven.path">{{ rainFromHeaven.text }}</a>
-  </li>
-  <li>
-    <a [href]="whyPrayHailMaryBeforeSermons.path">{{ whyPrayHailMaryBeforeSermons.text }}</a>
-  </li>
-  <li>
-    <a [href]="whyUrgeTheRosary.path">{{ whyUrgeTheRosary.text }}</a>
+    <a [href]="stDominic">{{ stDominic.text }}</a>
+    <ul>
+      <li>
+        <a [href]="whyStDominicRecievedRosary.path">{{ whyStDominicRecievedRosary.text }}</a>
+      </li>
+      <li>
+        <a [href]="rosaryWeapon.path">{{ rosaryWeapon.text }}</a>
+      </li>
+      <li>
+        <a [href]="weaponAgainstSin.path">{{ weaponAgainstSin.text }}</a>
+      </li>
+      <li>
+        <a [href]="rainFromHeaven.path">{{ rainFromHeaven.text }}</a>
+      </li>
+      <li>
+        <a [href]="whyPrayHailMaryBeforeSermons.path">{{ whyPrayHailMaryBeforeSermons.text }}</a>
+      </li>
+      <li>
+        <a [href]="whyUrgeTheRosary.path">{{ whyUrgeTheRosary.text }}</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a [href]="whyPerserveranceIsImportant.path">{{ whyPerserveranceIsImportant.text }}</a>
@@ -116,13 +126,15 @@ The Twenty Mysteries of the Rosary are grouped into four series of five decades 
   <li>Glorious Mysteries: Mysteries of Jesus's resurrection and glory</li>
 </ol>
 
-<h2 [id]="originOfTheRosary.id">{{ originOfTheRosary.text }}</h2>
+<h2 [id]="originAndName.id">{{ originAndName.text }}</h2>
+
+<h3 [id]="originOfTheRosary.id">{{ originOfTheRosary.text }}</h3>
 <p>
   The origin of the Rosary is the Prayer of Christ and the Angelic Salutation.
 </p>
 <p>See the second Rose of <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary</a></p>
 
-<h2 [id]="evolutionOfTheRosary.id">{{ evolutionOfTheRosary.text }}</h2>
+<h3 [id]="evolutionOfTheRosary.id">{{ evolutionOfTheRosary.text }}</h3>
 <p>
   <span class="def">1214:</span>
   The Church received the Rosary in its present form after
@@ -152,12 +164,14 @@ The Twenty Mysteries of the Rosary are grouped into four series of five decades 
   and provides guidance on how to better pray the Rosary. 
 </p>
 
-<h2 [id]="whyStDominicRecievedRosary.id">{{ whyStDominicRecievedRosary.text }}</h2>
+<h2 [id]="stDominic.id">{{ stDominic.text }}</h2>
+
+<h3 [id]="whyStDominicRecievedRosary.id">{{ whyStDominicRecievedRosary.text }}</h3>
 <p>
   St. Dominic received the rosary from the Blessed Virgin as a weapon which the Blessed Trinity wants to use to convert the Albingensians and reform the world. 
 </p>
 
-<h2 [id]="rosaryWeapon.id">{{ rosaryWeapon.text }}</h2>
+<h3 [id]="rosaryWeapon.id">{{ rosaryWeapon.text }}</h3>
 <p>
   St. Dominic used the Rosary as a weapon by spreading devotion to it by through example and zealous preaching for the salvation of souls. 
   (St. Louis-Marie de Montfort,
@@ -165,22 +179,22 @@ The Twenty Mysteries of the Rosary are grouped into four series of five decades 
   Third Rose)
 </p>
 
-<h2 [id]="weaponAgainstSin.id">{{ weaponAgainstSin.text }}</h2>
+<h3 [id]="weaponAgainstSin.id">{{ weaponAgainstSin.text }}</h3>
 <p>
   The Rosary is a powerful weapon against sin because places the sinner in the right frame of mind to really benefit from hearing the truth about the evils of sin and the goodness of God.
 </p>
 
-<h2 [id]="rainFromHeaven.id">{{ rainFromHeaven.text }}</h2>
+<h3 [id]="rainFromHeaven.id">{{ rainFromHeaven.text }}</h3>
 <p>
   The Angelic Salutation is sometimes called “rain from heaven” because it is was the beginning of Almighty God’s plan to renew the earth. 
 </p>
 
-<h2 [id]="whyPrayHailMaryBeforeSermons.id">{{ whyPrayHailMaryBeforeSermons.text }}</h2>
+<h3 [id]="whyPrayHailMaryBeforeSermons.id">{{ whyPrayHailMaryBeforeSermons.text }}</h3>
 <p>
   The Hail Mary is prayed before sermons because Our Lady revealed to St. Dominic that this would allow his bear the results he hoped for. 
 </p>
 
-<h2 [id]="whyUrgeTheRosary.id">{{ whyUrgeTheRosary.text }}</h2>
+<h3 [id]="whyUrgeTheRosary.id">{{ whyUrgeTheRosary.text }}</h3>
 <p>
   Urging people to pray the Rosary in a sermon allows it to bear fruit because it places people in the right frame of mind to benefit from the preaching. 
   (St. Louis-Marie de Montfort,
