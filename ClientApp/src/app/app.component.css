@@ -9,3 +9,12 @@ footer q {
   color: #660000; /* blood red */
   font-weight: bold;
 }
+
+.scroll-btn {
+  display: none;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  border: none;
+  cursor: pointer;
+}
