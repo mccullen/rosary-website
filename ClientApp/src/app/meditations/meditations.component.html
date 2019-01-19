@@ -1,37 +1,39 @@
-<h1>Meditations</h1>
+<div class="document">
+  <h1>Meditations</h1>
 
-<ul>
-  <li>
-    <a [href]="whatIsAMystery.path">{{ whatIsAMystery.text }}</a>
-  </li>
-  <li>
-    <a [href]="howManyMysteries.path">{{ howManyMysteries.text }}</a>
-  </li>
-  <li>
-    <a [href]="howAreMysteriesGrouped.path">{{ howAreMysteriesGrouped.text }}</a>
-  </li>
-  <li>
-    <a [href]="soulOfRosary.path">{{ soulOfRosary.text }}</a>
-  </li>
-</ul>
+  <ul>
+    <li>
+      <a [href]="whatIsAMystery.path">{{ whatIsAMystery.text }}</a>
+    </li>
+    <li>
+      <a [href]="howManyMysteries.path">{{ howManyMysteries.text }}</a>
+    </li>
+    <li>
+      <a [href]="howAreMysteriesGrouped.path">{{ howAreMysteriesGrouped.text }}</a>
+    </li>
+    <li>
+      <a [href]="soulOfRosary.path">{{ soulOfRosary.text }}</a>
+    </li>
+  </ul>
 
-<h2 [id]="whatIsAMystery.id">{{ whatIsAMystery.text }}</h2>
-<p>
-  A significant event or moment in the life of Jesus and Mary
-  (The Holy See, <a [href]="appService.holySeeRosaryLink">The Mysteries of the Rosary</a>)
-</p>
+  <h2 [id]="whatIsAMystery.id">{{ whatIsAMystery.text }}</h2>
+  <p>
+    A significant event or moment in the life of Jesus and Mary
+    (The Holy See, <a [href]="appService.holySeeRosaryLink">The Mysteries of the Rosary</a>)
+  </p>
 
-<h2 [id]="howManyMysteries.id">{{ howManyMysteries.text }}</h2>
-<p>
-  There are twenty mysteries in the Rosary.
-</p>
+  <h2 [id]="howManyMysteries.id">{{ howManyMysteries.text }}</h2>
+  <p>
+    There are twenty mysteries in the Rosary.
+  </p>
 
-<h2 [id]="howAreMysteriesGrouped.id">{{ howAreMysteriesGrouped.text }}</h2>
-<p>
-  The mysteries are grouped into four series: the joyful mysteries, mysteries of light, sorrowful mysteries, and the glorious mysteries. 
-</p>
+  <h2 [id]="howAreMysteriesGrouped.id">{{ howAreMysteriesGrouped.text }}</h2>
+  <p>
+    The mysteries are grouped into four series: the joyful mysteries, mysteries of light, sorrowful mysteries, and the glorious mysteries. 
+  </p>
 
-<h2 [id]="soulOfRosary.id">{{ soulOfRosary.text }}</h2>
-<p>
-  Coming soon...
-</p>
+  <h2 [id]="soulOfRosary.id">{{ soulOfRosary.text }}</h2>
+  <p>
+    Coming soon...
+  </p>
+</div>

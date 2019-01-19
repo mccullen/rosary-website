@@ -1,27 +1,29 @@
-<h1>Prayers</h1>
-<ul>
-  <li>
-    <a [href]="vocalPrayers.path">{{ vocalPrayers.text }}</a>
-  </li>
-  <li>
-    <a [href]="otherPrayers.path">{{ otherPrayers.text }}</a>
-  </li>
-  <li>
-    <a [href]="bodyOfRosary.path">{{ bodyOfRosary.text }}</a>
-  </li>
-</ul>
+<div class="document">
+  <h1>Prayers</h1>
+  <ul>
+    <li>
+      <a [href]="vocalPrayers.path">{{ vocalPrayers.text }}</a>
+    </li>
+    <li>
+      <a [href]="otherPrayers.path">{{ otherPrayers.text }}</a>
+    </li>
+    <li>
+      <a [href]="bodyOfRosary.path">{{ bodyOfRosary.text }}</a>
+    </li>
+  </ul>
 
-<h2 [id]="vocalPrayers.id">{{ vocalPrayers.text }}</h2>
-<p>
-  The Rosary is composed of the Sign of the Cross, Creed, Our Father, Hail Mary, and Glory be to the Father
-</p>
+  <h2 [id]="vocalPrayers.id">{{ vocalPrayers.text }}</h2>
+  <p>
+    The Rosary is composed of the Sign of the Cross, Creed, Our Father, Hail Mary, and Glory be to the Father
+  </p>
 
-<h2 [id]="otherPrayers.id">{{ otherPrayers.text }}</h2>
-<p>
-  Coming soon...
-</p>
+  <h2 [id]="otherPrayers.id">{{ otherPrayers.text }}</h2>
+  <p>
+    Coming soon...
+  </p>
 
-<h2 [id]="bodyOfRosary.id">{{ bodyOfRosary.text }}</h2>
-<p>
-  Coming soon...
-</p>
+  <h2 [id]="bodyOfRosary.id">{{ bodyOfRosary.text }}</h2>
+  <p>
+    Coming soon...
+  </p>
+</div>

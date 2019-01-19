@@ -1,46 +1,48 @@
-<h1>Pray Worthily</h1>
-<ul>
-  <li>
-    <a [href]="avoidDistractions.path">{{ avoidDistractions.text }}</a>
-  </li>
-  <li>
-    <a [href]="methodsOfPraying.path">{{ methodsOfPraying.text }}</a>
-  </li>
-  <li>
-    <a [href]="groupRosary.path">{{ groupRosary.text }}</a>
-  </li>
-  <li>
-    <a [href]="handouts.path">{{ handouts.text }}</a>
-  </li>
-</ul>
+<div class="document">
+  <h1>Pray Worthily</h1>
+  <ul>
+    <li>
+      <a [href]="avoidDistractions.path">{{ avoidDistractions.text }}</a>
+    </li>
+    <li>
+      <a [href]="methodsOfPraying.path">{{ methodsOfPraying.text }}</a>
+    </li>
+    <li>
+      <a [href]="groupRosary.path">{{ groupRosary.text }}</a>
+    </li>
+    <li>
+      <a [href]="handouts.path">{{ handouts.text }}</a>
+    </li>
+  </ul>
 
-<h2 [id]="avoidDistractions.id">{{ avoidDistractions.text }}</h2>
-<p>
-  Coming soon...
-</p>
+  <h2 [id]="avoidDistractions.id">{{ avoidDistractions.text }}</h2>
+  <p>
+    Coming soon...
+  </p>
 
-<h2 [id]="methodsOfPraying.id">{{ methodsOfPraying.text }}</h2>
-<ul>
-  <li>
-    <a [href]="appService.stMontfortMethodsOfPrayingLink">
-      St. Louis-Marie de Montfort's methods of praying the Rosary
-    </a>
-  </li>
-  <li>
-    <a [href]="appService.holySeeRosaryLink">
-      Holy See method of praying the Rosary
-    </a>
-  </li>
-</ul>
+  <h2 [id]="methodsOfPraying.id">{{ methodsOfPraying.text }}</h2>
+  <ul>
+    <li>
+      <a [href]="appService.stMontfortMethodsOfPrayingLink">
+        St. Louis-Marie de Montfort's methods of praying the Rosary
+      </a>
+    </li>
+    <li>
+      <a [href]="appService.holySeeRosaryLink">
+        Holy See method of praying the Rosary
+      </a>
+    </li>
+  </ul>
 
-<h2 [id]="groupRosary.id">{{ groupRosary.text }}</h2>
-<p>
-  Coming soon...
-</p>
+  <h2 [id]="groupRosary.id">{{ groupRosary.text }}</h2>
+  <p>
+    Coming soon...
+  </p>
 
-<h2 [id]="handouts.id">{{ handouts.text }}</h2>
-<ul>
-  <li>
-    <a [href]="joyfulMysteriesPath">Joyful Mysteries Download</a>
-  </li>
-</ul>
+  <h2 [id]="handouts.id">{{ handouts.text }}</h2>
+  <ul>
+    <li>
+      <a [href]="joyfulMysteriesPath">Joyful Mysteries Download</a>
+    </li>
+  </ul>
+</div>

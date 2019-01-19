@@ -1,242 +1,244 @@
-<h1>Origin and Name</h1>
-<ul class="rose-contents">
-  <li>
-    <a [href]="prayers.path">{{ prayers.text }}</a>
-    <ul>
-      <li>
-        <a [href]="whatIsTheRosary.path">{{ whatIsTheRosary.text }}</a>
-      </li>
-      <li>
-        <a [href]="kindsOfPrayer.path">{{ kindsOfPrayer.text }}</a>
-      </li>
-      <li>
-        <a [href]="vocalPrayers.path">{{ vocalPrayers.text }}</a>
-      </li>
-      <li>
-        <a [href]="mentalPrayers.path">{{ mentalPrayers.text }}</a>
-      </li>
-      <li>
-        <a [href]="fruitOfTheMysteries.path">{{ fruitOfTheMysteries.text }}</a>
-      </li>
-      <li>
-        <a [href]="seriesOfTheRosary.path">{{ seriesOfTheRosary.text }}</a>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a [href]="originAndName.path">{{ originAndName.text }}</a>
-    <ul>
-      <li>
-        <a [href]="originOfTheRosary.path">{{ originOfTheRosary.text }}</a>
-      </li>
-      <li>
-        <a [href]="evolutionOfTheRosary.path">{{ evolutionOfTheRosary.text }}</a>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a [href]="stDominic">{{ stDominic.text }}</a>
-    <ul>
-      <li>
-        <a [href]="whyStDominicRecievedRosary.path">{{ whyStDominicRecievedRosary.text }}</a>
-      </li>
-      <li>
-        <a [href]="rosaryWeapon.path">{{ rosaryWeapon.text }}</a>
-      </li>
-      <li>
-        <a [href]="weaponAgainstSin.path">{{ weaponAgainstSin.text }}</a>
-      </li>
-      <li>
-        <a [href]="rainFromHeaven.path">{{ rainFromHeaven.text }}</a>
-      </li>
-      <li>
-        <a [href]="whyPrayHailMaryBeforeSermons.path">{{ whyPrayHailMaryBeforeSermons.text }}</a>
-      </li>
-      <li>
-        <a [href]="whyUrgeTheRosary.path">{{ whyUrgeTheRosary.text }}</a>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a [href]="whyPerserveranceIsImportant.path">{{ whyPerserveranceIsImportant.text }}</a>
-  </li>
-  <li>
-    <a [href]="whatDoesRosaryMean.path">{{ whatDoesRosaryMean.text }}</a>
-  </li>
-  <li>
-    <a [href]="crownOfRoses.path">{{ crownOfRoses.text }}</a>
-  </li>
-  <li>
-    <a [href]="essenceOfRosary.path">{{ essenceOfRosary.text }}</a>
-  </li>
-</ul>
-
-<h2 [id]="prayers.id">{{ prayers.text }}</h2>
-
-<h3 [id]="whatIsTheRosary.id">{{ whatIsTheRosary.text }}</h3>
-<p>
-  The Rosary is a prayer of meditation on the mysteries of the Gospel
-</p>
-<blockquote>
-  <p>
-    The Rosary is a blessed blending of mental and vocal prayer by which we honour and learn to imitate
-    the mysteries and the virtues of the life, death, passion and glory of Jesus and Mary.
-  </p>
-  <cite>
-    St. Louis-Marie de Montfort,
-    <a [href]="app.secretOfTheRosaryLink">
-      The Admirable Secret of the Rosary,
-    </a>
-    First Rose
-  </cite>
-</blockquote>
-
-
-<h3 [id]="kindsOfPrayer.id">{{ kindsOfPrayer.text }}</h3>
-<p>
-  The Rosary consists of two kinds of prayer: vocal prayer and mental prayer.
-</p>
-
-<h3 [id]="vocalPrayers.id">{{ vocalPrayers.text }}</h3>
-<p>
-  The vocal prayers of the Rosary consists in saying twenty decades of the Hail Mary, each headed by an Our Father and followed by a Glory Be to the Father and the optional Fatima prayer.
-</p>
-<p>See the first Rose of <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary</a></p>
-
-<h3 [id]="mentalPrayers.id">{{ mentalPrayers.text }}</h3>
-<p>
-  The mental prayers of the Rosary consists in meditating upon and contemplating the twenty mysteries of the chief mysteries of the life, ministry, death, and glory of Jesus Christ and His Blessed Mother at the same time the vocal prayers are being recited. 
-</p>
-<p>See the first Rose of <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary</a></p>
-
-<h3 [id]="fruitOfTheMysteries.id">{{ fruitOfTheMysteries.text }}</h3>
-<p>
-  The fruits of the Mysteries of the Rosary are the principle virtues which Jesus and Mary practiced and we seek to imitate.
-</p>
-<p>See the first Rose of <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary</a></p>
-
-<h3 [id]="seriesOfTheRosary.id">{{ seriesOfTheRosary.text }}</h3>
-<p>
-The Twenty Mysteries of the Rosary are grouped into four series of five decades each:
-</p>
-<ol>
-  <li>Joyful Mysteries: Mysteries of Jesus's early life and the incarnation</li>
-  <li>Mysteries of Light: Mysteries of Jesus's later life and ministry</li>
-  <li>Sorrowful Mysteries: Mysteries of Jesus's passion and death</li>
-  <li>Glorious Mysteries: Mysteries of Jesus's resurrection and glory</li>
-</ol>
-
-<h2 [id]="originAndName.id">{{ originAndName.text }}</h2>
-
-<h3 [id]="originOfTheRosary.id">{{ originOfTheRosary.text }}</h3>
-<p>
-  The origin of the Rosary is the Prayer of Christ and the Angelic Salutation.
-</p>
-<p>See the second Rose of <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary</a></p>
-
-<h3 [id]="evolutionOfTheRosary.id">{{ evolutionOfTheRosary.text }}</h3>
-<p>
-  <span class="def">1214:</span>
-  The Church received the Rosary in its present form after
-  St. Dominic received it from the Blessed Virgin to convert the Albigensians (who no longer exist)
-  and other sinners. (St. Louis-Marie de Montfort, <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary</a>,
-  Second Rose)
-</p>
-<p>
-  At this time, it was called the Psalter of Jesus and Mary because it had the same number of Angelic
-  Salutations as there are psalms in the Book of the Psalms of David (150). Since simple and uneducated
-  people could not say David’s Psalter, they would say the Psalter of Jesus and Mary instead
-  (St. Louis-Marie de Montfort, <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary</a>
-  , Sixth Rose).
-</p>
-<p>
-  <span class="def">1460:</span>
-  The Rosary, having lost its first fervor after a century, is restored by Blessed Alan de la Roche’s
-  preaching after Our Lord spoke to him in the Sacred Host and reproached him for not preaching the
-  Rosary despite his learning and understanding (St. Louis-Marie de Montfort,
-  <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary,</a> Fourth Rose).
-</p>
-<p>
-  <span class="def">2002:</span>
-  St. Pope John Paul II introduced the “Mysteries of Light” (the Luminous Mysteries) as an
-  optional series of mysteries in his Apostolic Letter on the Rosary,
-  <a [href]="app.onTheRosaryLink">Rosarium Virginis Mariae,</a>
-  and provides guidance on how to better pray the Rosary. 
-</p>
-
-<h2 [id]="stDominic.id">{{ stDominic.text }}</h2>
-
-<h3 [id]="whyStDominicRecievedRosary.id">{{ whyStDominicRecievedRosary.text }}</h3>
-<p>
-  St. Dominic received the rosary from the Blessed Virgin as a weapon which the Blessed Trinity wants to use to convert the Albingensians and reform the world. 
-</p>
-
-<h3 [id]="rosaryWeapon.id">{{ rosaryWeapon.text }}</h3>
-<p>
-  St. Dominic used the Rosary as a weapon by spreading devotion to it by through example and zealous preaching for the salvation of souls. 
-  (St. Louis-Marie de Montfort,
-  <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary,</a>
-  Third Rose)
-</p>
-
-<h3 [id]="weaponAgainstSin.id">{{ weaponAgainstSin.text }}</h3>
-<p>
-  The Rosary is a powerful weapon against sin because places the sinner in the right frame of mind to really benefit from hearing the truth about the evils of sin and the goodness of God.
-</p>
-
-<h3 [id]="rainFromHeaven.id">{{ rainFromHeaven.text }}</h3>
-<p>
-  The Angelic Salutation is sometimes called “rain from heaven” because it is was the beginning of Almighty God’s plan to renew the earth. 
-</p>
-
-<h3 [id]="whyPrayHailMaryBeforeSermons.id">{{ whyPrayHailMaryBeforeSermons.text }}</h3>
-<p>
-  The Hail Mary is prayed before sermons because Our Lady revealed to St. Dominic that this would allow his bear the results he hoped for. 
-</p>
-
-<h3 [id]="whyUrgeTheRosary.id">{{ whyUrgeTheRosary.text }}</h3>
-<p>
-  Urging people to pray the Rosary in a sermon allows it to bear fruit because it places people in the right frame of mind to benefit from the preaching. 
-  (St. Louis-Marie de Montfort,
-  <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary,</a>
-  Third Rose)
-</p>
-
-<h2 [id]="whyPerserveranceIsImportant.id">{{ whyPerserveranceIsImportant.text }}</h2>
-<p>
-  Coming soon...
-</p>
-
-<h2 [id]="whatDoesRosaryMean.id">{{ whatDoesRosaryMean.text }}</h2>
-<p>
-  The name “Rosary” means “Crown of Roses”
-  (St. Louis-Marie de Montfort,
-  <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary,</a>
-  Seventh Rose)
-</p>
-
-<h2 [id]="crownOfRoses.id">{{ crownOfRoses.text }}</h2>
-<p>
-  Every time people say the Rosary devoutly they place on the heads of Jesus and Mary a crown of roses. There is a white rose for each Hail Mary and a red rose for each Our Father.
-  (St. Louis-Marie de Montfort,
-  <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary,</a>
-  Seventh Rose)
-</p>
-
-<h2 [id]="essenceOfRosary.id">{{ essenceOfRosary.text }}</h2>
-<p>
-  The Rosary is essentially composed of an introduction followed by twenty “mysteries” (significant events or moments in the life of Jesus and Mary) which are contemplated over the vocal prayers
-</p>
-<ol>
-  <li>Vocal Prayers</li>
-  <ul>
-    <li>Hail Mary</li>
-    <li>Our Father</li>
-    <li>Glory Be to the Father</li>
+<div class="document">
+  <h1>Origin and Name</h1>
+  <ul class="rose-contents">
+    <li>
+      <a [href]="prayers.path">{{ prayers.text }}</a>
+      <ul>
+        <li>
+          <a [href]="whatIsTheRosary.path">{{ whatIsTheRosary.text }}</a>
+        </li>
+        <li>
+          <a [href]="kindsOfPrayer.path">{{ kindsOfPrayer.text }}</a>
+        </li>
+        <li>
+          <a [href]="vocalPrayers.path">{{ vocalPrayers.text }}</a>
+        </li>
+        <li>
+          <a [href]="mentalPrayers.path">{{ mentalPrayers.text }}</a>
+        </li>
+        <li>
+          <a [href]="fruitOfTheMysteries.path">{{ fruitOfTheMysteries.text }}</a>
+        </li>
+        <li>
+          <a [href]="seriesOfTheRosary.path">{{ seriesOfTheRosary.text }}</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a [href]="originAndName.path">{{ originAndName.text }}</a>
+      <ul>
+        <li>
+          <a [href]="originOfTheRosary.path">{{ originOfTheRosary.text }}</a>
+        </li>
+        <li>
+          <a [href]="evolutionOfTheRosary.path">{{ evolutionOfTheRosary.text }}</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a [href]="stDominic">{{ stDominic.text }}</a>
+      <ul>
+        <li>
+          <a [href]="whyStDominicRecievedRosary.path">{{ whyStDominicRecievedRosary.text }}</a>
+        </li>
+        <li>
+          <a [href]="rosaryWeapon.path">{{ rosaryWeapon.text }}</a>
+        </li>
+        <li>
+          <a [href]="weaponAgainstSin.path">{{ weaponAgainstSin.text }}</a>
+        </li>
+        <li>
+          <a [href]="rainFromHeaven.path">{{ rainFromHeaven.text }}</a>
+        </li>
+        <li>
+          <a [href]="whyPrayHailMaryBeforeSermons.path">{{ whyPrayHailMaryBeforeSermons.text }}</a>
+        </li>
+        <li>
+          <a [href]="whyUrgeTheRosary.path">{{ whyUrgeTheRosary.text }}</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a [href]="whyPerserveranceIsImportant.path">{{ whyPerserveranceIsImportant.text }}</a>
+    </li>
+    <li>
+      <a [href]="whatDoesRosaryMean.path">{{ whatDoesRosaryMean.text }}</a>
+    </li>
+    <li>
+      <a [href]="crownOfRoses.path">{{ crownOfRoses.text }}</a>
+    </li>
+    <li>
+      <a [href]="essenceOfRosary.path">{{ essenceOfRosary.text }}</a>
+    </li>
   </ul>
-  <li>
-    <a [href]="seriesOfTheRosary.path">
-      Meditations on the Gospel</a>
-     (The good news of our salvation through the life, ministry, passion, and resurrection of Jesus)
-  </li>
-</ol>
+
+  <h2 [id]="prayers.id">{{ prayers.text }}</h2>
+
+  <h3 [id]="whatIsTheRosary.id">{{ whatIsTheRosary.text }}</h3>
+  <p>
+    The Rosary is a prayer of meditation on the mysteries of the Gospel
+  </p>
+  <blockquote>
+    <p>
+      The Rosary is a blessed blending of mental and vocal prayer by which we honour and learn to imitate
+      the mysteries and the virtues of the life, death, passion and glory of Jesus and Mary.
+    </p>
+    <cite>
+      St. Louis-Marie de Montfort,
+      <a [href]="app.secretOfTheRosaryLink">
+        The Admirable Secret of the Rosary,
+      </a>
+      First Rose
+    </cite>
+  </blockquote>
+
+
+  <h3 [id]="kindsOfPrayer.id">{{ kindsOfPrayer.text }}</h3>
+  <p>
+    The Rosary consists of two kinds of prayer: vocal prayer and mental prayer.
+  </p>
+
+  <h3 [id]="vocalPrayers.id">{{ vocalPrayers.text }}</h3>
+  <p>
+    The vocal prayers of the Rosary consists in saying twenty decades of the Hail Mary, each headed by an Our Father and followed by a Glory Be to the Father and the optional Fatima prayer.
+  </p>
+  <p>See the first Rose of <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary</a></p>
+
+  <h3 [id]="mentalPrayers.id">{{ mentalPrayers.text }}</h3>
+  <p>
+    The mental prayers of the Rosary consists in meditating upon and contemplating the twenty mysteries of the chief mysteries of the life, ministry, death, and glory of Jesus Christ and His Blessed Mother at the same time the vocal prayers are being recited. 
+  </p>
+  <p>See the first Rose of <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary</a></p>
+
+  <h3 [id]="fruitOfTheMysteries.id">{{ fruitOfTheMysteries.text }}</h3>
+  <p>
+    The fruits of the Mysteries of the Rosary are the principle virtues which Jesus and Mary practiced and we seek to imitate.
+  </p>
+  <p>See the first Rose of <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary</a></p>
+
+  <h3 [id]="seriesOfTheRosary.id">{{ seriesOfTheRosary.text }}</h3>
+  <p>
+  The Twenty Mysteries of the Rosary are grouped into four series of five decades each:
+  </p>
+  <ol>
+    <li>Joyful Mysteries: Mysteries of Jesus's early life and the incarnation</li>
+    <li>Mysteries of Light: Mysteries of Jesus's later life and ministry</li>
+    <li>Sorrowful Mysteries: Mysteries of Jesus's passion and death</li>
+    <li>Glorious Mysteries: Mysteries of Jesus's resurrection and glory</li>
+  </ol>
+
+  <h2 [id]="originAndName.id">{{ originAndName.text }}</h2>
+
+  <h3 [id]="originOfTheRosary.id">{{ originOfTheRosary.text }}</h3>
+  <p>
+    The origin of the Rosary is the Prayer of Christ and the Angelic Salutation.
+  </p>
+  <p>See the second Rose of <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary</a></p>
+
+  <h3 [id]="evolutionOfTheRosary.id">{{ evolutionOfTheRosary.text }}</h3>
+  <p>
+    <span class="def">1214:</span>
+    The Church received the Rosary in its present form after
+    St. Dominic received it from the Blessed Virgin to convert the Albigensians (who no longer exist)
+    and other sinners. (St. Louis-Marie de Montfort, <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary</a>,
+    Second Rose)
+  </p>
+  <p>
+    At this time, it was called the Psalter of Jesus and Mary because it had the same number of Angelic
+    Salutations as there are psalms in the Book of the Psalms of David (150). Since simple and uneducated
+    people could not say David’s Psalter, they would say the Psalter of Jesus and Mary instead
+    (St. Louis-Marie de Montfort, <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary</a>
+    , Sixth Rose).
+  </p>
+  <p>
+    <span class="def">1460:</span>
+    The Rosary, having lost its first fervor after a century, is restored by Blessed Alan de la Roche’s
+    preaching after Our Lord spoke to him in the Sacred Host and reproached him for not preaching the
+    Rosary despite his learning and understanding (St. Louis-Marie de Montfort,
+    <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary,</a> Fourth Rose).
+  </p>
+  <p>
+    <span class="def">2002:</span>
+    St. Pope John Paul II introduced the “Mysteries of Light” (the Luminous Mysteries) as an
+    optional series of mysteries in his Apostolic Letter on the Rosary,
+    <a [href]="app.onTheRosaryLink">Rosarium Virginis Mariae,</a>
+    and provides guidance on how to better pray the Rosary. 
+  </p>
+
+  <h2 [id]="stDominic.id">{{ stDominic.text }}</h2>
+
+  <h3 [id]="whyStDominicRecievedRosary.id">{{ whyStDominicRecievedRosary.text }}</h3>
+  <p>
+    St. Dominic received the rosary from the Blessed Virgin as a weapon which the Blessed Trinity wants to use to convert the Albingensians and reform the world. 
+  </p>
+
+  <h3 [id]="rosaryWeapon.id">{{ rosaryWeapon.text }}</h3>
+  <p>
+    St. Dominic used the Rosary as a weapon by spreading devotion to it by through example and zealous preaching for the salvation of souls. 
+    (St. Louis-Marie de Montfort,
+    <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary,</a>
+    Third Rose)
+  </p>
+
+  <h3 [id]="weaponAgainstSin.id">{{ weaponAgainstSin.text }}</h3>
+  <p>
+    The Rosary is a powerful weapon against sin because places the sinner in the right frame of mind to really benefit from hearing the truth about the evils of sin and the goodness of God.
+  </p>
+
+  <h3 [id]="rainFromHeaven.id">{{ rainFromHeaven.text }}</h3>
+  <p>
+    The Angelic Salutation is sometimes called “rain from heaven” because it is was the beginning of Almighty God’s plan to renew the earth. 
+  </p>
+
+  <h3 [id]="whyPrayHailMaryBeforeSermons.id">{{ whyPrayHailMaryBeforeSermons.text }}</h3>
+  <p>
+    The Hail Mary is prayed before sermons because Our Lady revealed to St. Dominic that this would allow his bear the results he hoped for. 
+  </p>
+
+  <h3 [id]="whyUrgeTheRosary.id">{{ whyUrgeTheRosary.text }}</h3>
+  <p>
+    Urging people to pray the Rosary in a sermon allows it to bear fruit because it places people in the right frame of mind to benefit from the preaching. 
+    (St. Louis-Marie de Montfort,
+    <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary,</a>
+    Third Rose)
+  </p>
+
+  <h2 [id]="whyPerserveranceIsImportant.id">{{ whyPerserveranceIsImportant.text }}</h2>
+  <p>
+    Coming soon...
+  </p>
+
+  <h2 [id]="whatDoesRosaryMean.id">{{ whatDoesRosaryMean.text }}</h2>
+  <p>
+    The name “Rosary” means “Crown of Roses”
+    (St. Louis-Marie de Montfort,
+    <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary,</a>
+    Seventh Rose)
+  </p>
+
+  <h2 [id]="crownOfRoses.id">{{ crownOfRoses.text }}</h2>
+  <p>
+    Every time people say the Rosary devoutly they place on the heads of Jesus and Mary a crown of roses. There is a white rose for each Hail Mary and a red rose for each Our Father.
+    (St. Louis-Marie de Montfort,
+    <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary,</a>
+    Seventh Rose)
+  </p>
+
+  <h2 [id]="essenceOfRosary.id">{{ essenceOfRosary.text }}</h2>
+  <p>
+    The Rosary is essentially composed of an introduction followed by twenty “mysteries” (significant events or moments in the life of Jesus and Mary) which are contemplated over the vocal prayers
+  </p>
+  <ol>
+    <li>Vocal Prayers</li>
+    <ul>
+      <li>Hail Mary</li>
+      <li>Our Father</li>
+      <li>Glory Be to the Father</li>
+    </ul>
+    <li>
+      <a [href]="seriesOfTheRosary.path">
+        Meditations on the Gospel</a>
+       (The good news of our salvation through the life, ministry, passion, and resurrection of Jesus)
+    </li>
+  </ol>
+</div>
