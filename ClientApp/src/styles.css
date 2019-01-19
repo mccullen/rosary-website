@@ -18,3 +18,11 @@
   font-weight: bold;
   font-size: 16.8px;
 }
+
+li {
+  list-style-type: circle;
+}
+
+li li {
+  list-style-type: disc;
+}
