@@ -39,3 +39,11 @@ Run Tests from the ClientApp directory:
  - npm e2e
 
 Template used: https://docs.microsoft.com/en-us/aspnet/core/client-side/spa/angular?view=aspnetcore-2.2&tabs=visual-studio
+
+ steps taken to add bootstrap.js and jquery
+  - npm install jquery --save
+  - npm install --save-dev @types/jquery
+  - Add jquery.min.js to angular-cli.json
+  - npm install --save-dev @types/bootstrap
+  - declare var $: any;
+   - Note: You cannot do import * as $ from 'jquery' since typscript will give you an error if you use the bootstrap augmentations to jquery.

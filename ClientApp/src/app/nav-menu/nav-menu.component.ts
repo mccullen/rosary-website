@@ -10,6 +10,7 @@ import { LearnMoreComponent } from '../learn-more/learn-more.component';
 import { QuotesComponent } from '../quotes/quotes.component';
 import { DedicationComponent } from '../dedication/dedication.component';
 import { PatronsComponent } from '../patrons/patrons.component';
+declare var $: any;
 
 @Component({
   selector: 'app-nav-menu',
@@ -29,6 +30,12 @@ export class NavMenuComponent {
   quotesPath = QuotesComponent.quotesPath;
   dedicationPath = DedicationComponent.dedicationPath;
   patronsPath = PatronsComponent.patronsPath;
+
+  constructor() {
+    $(document).ready(function () {
+      $(".dropdown-toggle").dropdown();
+    });
+  }
 
   collapse() {
     this.isExpanded = false;

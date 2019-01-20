@@ -18,6 +18,9 @@
                     </a>
                 </li>
                 <li><hr></li>
+
+              <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Rosary Catechism</a>
+                <ul class="dropdown-menu">
                 <li [routerLinkActive]='["link-active"]'>
                     <a [routerLink]='["/" + dedicationPath ]' (click)='collapse()'>
                         Dedication
@@ -28,6 +31,9 @@
                         Origin and Name
                     </a>
                 </li>
+                </ul>
+              </li>
+
                 <li [routerLinkActive]='["link-active"]'>
                     <a [routerLink]='["/" + prayersPath ]' (click)='collapse()'>
                         Prayers
