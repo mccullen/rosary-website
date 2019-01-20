@@ -55,6 +55,11 @@
                 </li>
                 <li><hr></li>
                 <li [routerLinkActive]='["link-active"]'>
+                    <a [routerLink]='["/" + patronsPath ]' (click)='collapse()'>
+                        Patrons
+                    </a>
+                </li>
+                <li [routerLinkActive]='["link-active"]'>
                     <a [routerLink]='["/" + quotesPath ]' (click)='collapse()'>
                         Quotes
                     </a>

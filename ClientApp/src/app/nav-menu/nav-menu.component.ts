@@ -9,6 +9,7 @@ import { ContactComponent } from '../contact/contact.component';
 import { LearnMoreComponent } from '../learn-more/learn-more.component';
 import { QuotesComponent } from '../quotes/quotes.component';
 import { DedicationComponent } from '../dedication/dedication.component';
+import { PatronsComponent } from '../patrons/patrons.component';
 
 @Component({
   selector: 'app-nav-menu',
@@ -27,6 +28,7 @@ export class NavMenuComponent {
   learnMorePath = LearnMoreComponent.learnMorePath;
   quotesPath = QuotesComponent.quotesPath;
   dedicationPath = DedicationComponent.dedicationPath;
+  patronsPath = PatronsComponent.patronsPath;
 
   collapse() {
     this.isExpanded = false;
