@@ -4,6 +4,11 @@ import { PrayWorthilyComponent } from '../pray-worthily/pray-worthily.component'
 import { PrayersComponent } from '../prayers/prayers.component';
 import { MeditationsComponent } from '../meditations/meditations.component';
 import { WondersComponent } from '../wonders/wonders.component';
+import { AboutComponent } from '../about/about.component';
+import { ContactComponent } from '../contact/contact.component';
+import { LearnMoreComponent } from '../learn-more/learn-more.component';
+import { QuotesComponent } from '../quotes/quotes.component';
+import { DedicationComponent } from '../dedication/dedication.component';
 
 @Component({
   selector: 'app-nav-menu',
@@ -17,6 +22,11 @@ export class NavMenuComponent {
   prayersPath = PrayersComponent.prayersPath;
   meditationsPath = MeditationsComponent.meditationsPath;
   wondersPath = WondersComponent.wondersPath;
+  aboutPath = AboutComponent.aboutPath;
+  contactPath = ContactComponent.contactPath;
+  learnMorePath = LearnMoreComponent.learnMorePath;
+  quotesPath = QuotesComponent.quotesPath;
+  dedicationPath = DedicationComponent.dedicationPath;
 
   collapse() {
     this.isExpanded = false;

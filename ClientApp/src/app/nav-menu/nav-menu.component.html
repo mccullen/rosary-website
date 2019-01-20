@@ -19,6 +19,11 @@
                 </li>
                 <li><hr></li>
                 <li [routerLinkActive]='["link-active"]'>
+                    <a [routerLink]='["/" + dedicationPath ]' (click)='collapse()'>
+                        Dedication
+                    </a>
+                </li>
+                <li [routerLinkActive]='["link-active"]'>
                     <a [routerLink]='["/" + originAndNamePath ]' (click)='collapse()'>
                         Origin and Name
                     </a>
@@ -43,7 +48,27 @@
                         Pray it Worthily
                     </a>
                 </li>
+                <li [routerLinkActive]='["link-active"]'>
+                    <a [routerLink]='["/" + learnMorePath ]' (click)='collapse()'>
+                        Learn More
+                    </a>
+                </li>
                 <li><hr></li>
+                <li [routerLinkActive]='["link-active"]'>
+                    <a [routerLink]='["/" + quotesPath ]' (click)='collapse()'>
+                        Quotes
+                    </a>
+                </li>
+                <li [routerLinkActive]='["link-active"]'>
+                    <a [routerLink]='["/" + aboutPath ]' (click)='collapse()'>
+                        About
+                    </a>
+                </li>
+                <li [routerLinkActive]='["link-active"]'>
+                    <a [routerLink]='["/" + contactPath ]' (click)='collapse()'>
+                        Contact
+                    </a>
+                </li>
                 <li [routerLinkActive]='["link-active"]'>
                     <a [routerLink]='["/counter"]' (click)='collapse()'>
                         <span class='glyphicon glyphicon-education'></span> Counter
