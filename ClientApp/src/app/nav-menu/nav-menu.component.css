@@ -34,8 +34,13 @@ hr {
   margin-bottom: 0px;
 }
 
+.navbar li a {
+  padding: 5px 16px;
+}
+
+/* Styles for larger screens */
 @media (min-width: 768px) {
-    /* On small screens, convert the nav menu to a vertical sidebar */
+    /* On larger screens, convert the nav menu to a vertical sidebar */
     .main-nav {
         height: 100%;
         width: calc(25% - 20px);
@@ -61,7 +66,7 @@ hr {
         margin: 6px;
     }
     .navbar li a {
-        padding: 5px 16px;
+        padding: 2px 16px;
         border-radius: 4px;
     }
     .navbar a {
