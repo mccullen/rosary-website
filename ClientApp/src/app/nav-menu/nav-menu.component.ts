@@ -10,8 +10,6 @@ import { LearnMoreComponent } from '../learn-more/learn-more.component';
 import { QuotesComponent } from '../quotes/quotes.component';
 import { DedicationComponent } from '../dedication/dedication.component';
 import { PatronsComponent } from '../patrons/patrons.component';
-//declare var $: any;
-//import * as $ from 'jquery';
 
 @Component({
   selector: 'app-nav-menu',
@@ -33,15 +31,6 @@ export class NavMenuComponent {
   patronsPath = PatronsComponent.patronsPath;
 
   constructor() {
-    /*
-    $(function () {
-      debugger;
-      $("a").on("click", function () { console.log("HERE"); });
-    });
-    $(document).ready(function () {
-      $(".dropdown-toggle").dropdown();
-    });
-    */
   }
 
   collapse() {
