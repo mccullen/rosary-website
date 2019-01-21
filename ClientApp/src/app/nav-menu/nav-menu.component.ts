@@ -10,7 +10,8 @@ import { LearnMoreComponent } from '../learn-more/learn-more.component';
 import { QuotesComponent } from '../quotes/quotes.component';
 import { DedicationComponent } from '../dedication/dedication.component';
 import { PatronsComponent } from '../patrons/patrons.component';
-declare var $: any;
+//declare var $: any;
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-nav-menu',
