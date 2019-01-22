@@ -19,8 +19,9 @@
                 </li>
                 <li><hr></li>
 
-              <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Rosary Catechism</a>
-                <ul class="dropdown-menu">
+              <li dropdown class="dropdown">
+                <a dropdownToggle class="dropdown-toggle" data-toggle="dropdown" href="#">Rosary Catechism</a>
+                <ul *dropdownMenu class="dropdown-menu">
                 <li [routerLinkActive]='["link-active"]'>
                     <a [routerLink]='["/" + dedicationPath ]' (click)='collapse()'>
                         Dedication
