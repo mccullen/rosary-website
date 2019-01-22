@@ -19,20 +19,28 @@
                 </li>
                 <li><hr></li>
 
-              <li dropdown class="dropdown">
-                <a dropdownToggle class="dropdown-toggle" data-toggle="dropdown" href="#">Rosary Catechism</a>
-                <ul *dropdownMenu class="dropdown-menu">
-                <li [routerLinkActive]='["link-active"]'>
-                    <a [routerLink]='["/" + dedicationPath ]' (click)='collapse()'>
-                        Dedication
-                    </a>
-                </li>
-                <li [routerLinkActive]='["link-active"]'>
-                    <a [routerLink]='["/" + originAndNamePath ]' (click)='collapse()'>
-                        Origin and Name
-                    </a>
-                </li>
-                </ul>
+              <li class="nav-dropdown">
+                <fa-icon [icon]="faCoffee"></fa-icon>
+                <a href="#"
+                   (click)="toggleRosaryCatechism()"
+                   [attr.aria-expanded]="!isRosaryCatechismCollapsed"
+                   aria-controls="rosary-catechism-collapse">
+                  Rosary Catechism
+                </a>
+                <div id="rosary-catechism-collapse" [collapse]="isRosaryCatechismCollapsed">
+                  <ul>
+                    <li [routerLinkActive]='["link-active"]'>
+                        <a [routerLink]='["/" + dedicationPath ]' (click)='collapse()'>
+                            Dedication
+                        </a>
+                    </li>
+                    <li [routerLinkActive]='["link-active"]'>
+                        <a [routerLink]='["/" + originAndNamePath ]' (click)='collapse()'>
+                            Origin and Name
+                        </a>
+                    </li>
+                    </ul>
+                </div>
               </li>
 
                 <li [routerLinkActive]='["link-active"]'>

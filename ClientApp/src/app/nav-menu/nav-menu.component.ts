@@ -10,6 +10,7 @@ import { LearnMoreComponent } from '../learn-more/learn-more.component';
 import { QuotesComponent } from '../quotes/quotes.component';
 import { DedicationComponent } from '../dedication/dedication.component';
 import { PatronsComponent } from '../patrons/patrons.component';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-nav-menu',
@@ -18,6 +19,8 @@ import { PatronsComponent } from '../patrons/patrons.component';
 })
 export class NavMenuComponent {
   isExpanded = false;
+  isRosaryCatechismCollapsed = false;
+  faCoffee = faCoffee;
   originAndNamePath = OriginAndNameComponent.originAndNamePath;
   prayWorthilyPath = PrayWorthilyComponent.prayWorthilyPath;
   prayersPath = PrayersComponent.prayersPath;
@@ -39,5 +42,9 @@ export class NavMenuComponent {
 
   toggle() {
     this.isExpanded = !this.isExpanded;
+  }
+
+  toggleRosaryCatechism() {
+    this.isRosaryCatechismCollapsed = !this.isRosaryCatechismCollapsed;
   }
 }

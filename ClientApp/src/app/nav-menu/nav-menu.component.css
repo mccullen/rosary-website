@@ -38,6 +38,14 @@ hr {
   padding: 5px 16px;
 }
 
+.nav-dropdown li {
+  list-style-type: none;
+}
+
+.nav-dropdown ul {
+  padding-inline-start: 10px;
+}
+
 /* Styles for larger screens */
 @media (min-width: 768px) {
     /* On larger screens, convert the nav menu to a vertical sidebar */
