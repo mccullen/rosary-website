@@ -22,6 +22,7 @@ import { QuotesComponent } from './quotes/quotes.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { PatronsComponent } from './patrons/patrons.component';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { PatronsComponent } from './patrons/patrons.component';
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
+    BsDropdownModule.forRoot(),
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: OriginAndNameComponent.originAndNamePath, component: OriginAndNameComponent },
