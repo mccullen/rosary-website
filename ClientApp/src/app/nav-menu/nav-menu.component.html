@@ -17,59 +17,55 @@
                         Home
                     </a>
                 </li>
-                <li><hr></li>
-
-              <li class="nav-dropdown">
-                <fa-icon class="collapse-icon" [icon]="faChevron"></fa-icon>
-                <a class="collapse-link"
-                   href="javascript:void(0)"
-                   (click)="toggleRosaryCatechism()"
-                   [attr.aria-expanded]="!isRosaryCatechismCollapsed"
-                   aria-controls="rosary-catechism-collapse">
-                  Rosary Catechism
-                </a>
-                <div id="rosary-catechism-collapse" [collapse]="isRosaryCatechismCollapsed">
-                  <ul class="nav navbar-nav">
-                    <li [routerLinkActive]='["link-active"]'>
-                        <a [routerLink]='["/" + dedicationPath ]' (click)='collapse()'>
-                            Dedication
-                        </a>
-                    </li>
-                    <li [routerLinkActive]='["link-active"]'>
-                        <a [routerLink]='["/" + originAndNamePath ]' (click)='collapse()'>
-                            Origin and Name
-                        </a>
-                    </li>
+                <li class="nav-dropdown">
+                  <fa-icon class="collapse-icon" [icon]="faChevron" size="xs"></fa-icon>
+                  <a class="collapse-link"
+                     href="javascript:void(0)"
+                     (click)="toggleRosaryCatechism()"
+                     [attr.aria-expanded]="!isRosaryCatechismCollapsed"
+                     aria-controls="rosary-catechism-collapse">
+                    Rosary Catechism
+                  </a>
+                  <div id="rosary-catechism-collapse" [collapse]="isRosaryCatechismCollapsed">
+                    <ul class="nav navbar-nav">
+                      <li [routerLinkActive]='["link-active"]'>
+                          <a [routerLink]='["/" + dedicationPath ]' (click)='collapse()'>
+                              Dedication
+                          </a>
+                      </li>
+                      <li [routerLinkActive]='["link-active"]'>
+                          <a [routerLink]='["/" + originAndNamePath ]' (click)='collapse()'>
+                              Origin and Name
+                          </a>
+                      </li>
+                      <li [routerLinkActive]='["link-active"]'>
+                          <a [routerLink]='["/" + prayersPath ]' (click)='collapse()'>
+                              Prayers
+                          </a>
+                      </li>
+                      <li [routerLinkActive]='["link-active"]'>
+                          <a [routerLink]='["/" + meditationsPath ]' (click)='collapse()'>
+                              Meditations
+                          </a>
+                      </li>
+                      <li [routerLinkActive]='["link-active"]'>
+                          <a [routerLink]='["/" + wondersPath ]' (click)='collapse()'>
+                              Wonders
+                          </a>
+                      </li>
+                      <li [routerLinkActive]='["link-active"]'>
+                          <a [routerLink]='["/" + prayWorthilyPath ]' (click)='collapse()'>
+                              Pray it Worthily
+                          </a>
+                      </li>
+                      <li [routerLinkActive]='["link-active"]'>
+                          <a [routerLink]='["/" + learnMorePath ]' (click)='collapse()'>
+                              Learn More
+                          </a>
+                      </li>
                     </ul>
-                </div>
-              </li>
-
-                <li [routerLinkActive]='["link-active"]'>
-                    <a [routerLink]='["/" + prayersPath ]' (click)='collapse()'>
-                        Prayers
-                    </a>
+                  </div>
                 </li>
-                <li [routerLinkActive]='["link-active"]'>
-                    <a [routerLink]='["/" + meditationsPath ]' (click)='collapse()'>
-                        Meditations
-                    </a>
-                </li>
-                <li [routerLinkActive]='["link-active"]'>
-                    <a [routerLink]='["/" + wondersPath ]' (click)='collapse()'>
-                        Wonders
-                    </a>
-                </li>
-                <li [routerLinkActive]='["link-active"]'>
-                    <a [routerLink]='["/" + prayWorthilyPath ]' (click)='collapse()'>
-                        Pray it Worthily
-                    </a>
-                </li>
-                <li [routerLinkActive]='["link-active"]'>
-                    <a [routerLink]='["/" + learnMorePath ]' (click)='collapse()'>
-                        Learn More
-                    </a>
-                </li>
-                <li><hr></li>
                 <li [routerLinkActive]='["link-active"]'>
                     <a [routerLink]='["/" + patronsPath ]' (click)='collapse()'>
                         Patrons

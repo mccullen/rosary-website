@@ -49,12 +49,20 @@ hr {
 
 .nav-dropdown ul {
   padding-inline-start: 30px;
+  margin-top: 0px;
 }
 
 .collapse-icon {
   color: #9d9d9d;
   position: absolute;
   top: 1px;
+}
+
+.navbar li {
+  margin-right: 6px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-left: 10px;
 }
 
 /* Styles for larger screens */
@@ -82,7 +90,6 @@ hr {
     .navbar li {
         float: none;
         font-size: 15px;
-        margin: 6px;
     }
     .navbar li a {
         padding: 2px 16px;
