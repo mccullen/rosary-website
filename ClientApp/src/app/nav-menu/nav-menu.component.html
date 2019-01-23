@@ -13,22 +13,23 @@
         <div class='navbar-collapse collapse' [ngClass]='{ "in": isExpanded }'>
             <ul class='nav navbar-nav'>
                 <li [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]='{ exact: true }'>
-                    <a [routerLink]='["/"]' (click)='collapse()'>
+                    <a class="page-link" [routerLink]='["/"]' (click)='collapse()'>
                         Home
                     </a>
                 </li>
                 <li><hr></li>
 
               <li class="nav-dropdown">
-                <fa-icon [icon]="faCoffee"></fa-icon>
-                <a href="#"
+                <fa-icon class="collapse-icon" [icon]="faChevron"></fa-icon>
+                <a class="collapse-link"
+                   href="javascript:void(0)"
                    (click)="toggleRosaryCatechism()"
                    [attr.aria-expanded]="!isRosaryCatechismCollapsed"
                    aria-controls="rosary-catechism-collapse">
                   Rosary Catechism
                 </a>
                 <div id="rosary-catechism-collapse" [collapse]="isRosaryCatechismCollapsed">
-                  <ul>
+                  <ul class="nav navbar-nav">
                     <li [routerLinkActive]='["link-active"]'>
                         <a [routerLink]='["/" + dedicationPath ]' (click)='collapse()'>
                             Dedication

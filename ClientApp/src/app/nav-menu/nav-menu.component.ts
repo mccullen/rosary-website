@@ -10,7 +10,7 @@ import { LearnMoreComponent } from '../learn-more/learn-more.component';
 import { QuotesComponent } from '../quotes/quotes.component';
 import { DedicationComponent } from '../dedication/dedication.component';
 import { PatronsComponent } from '../patrons/patrons.component';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight, faChevronDown, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-nav-menu',
@@ -19,8 +19,8 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 })
 export class NavMenuComponent {
   isExpanded = false;
-  isRosaryCatechismCollapsed = false;
-  faCoffee = faCoffee;
+  isRosaryCatechismCollapsed = true;
+  faChevron: IconDefinition = faChevronRight;
   originAndNamePath = OriginAndNameComponent.originAndNamePath;
   prayWorthilyPath = PrayWorthilyComponent.prayWorthilyPath;
   prayersPath = PrayersComponent.prayersPath;
@@ -46,5 +46,10 @@ export class NavMenuComponent {
 
   toggleRosaryCatechism() {
     this.isRosaryCatechismCollapsed = !this.isRosaryCatechismCollapsed;
+    if (this.faChevron === faChevronRight) {
+      this.faChevron = faChevronDown;
+    } else {
+      this.faChevron = faChevronRight;
+    }
   }
 }

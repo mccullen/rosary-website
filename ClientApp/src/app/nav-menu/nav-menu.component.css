@@ -10,6 +10,11 @@ li.link-active a:focus {
     color: white;
 }
 
+li a.collapse-link:hover,
+li a.collapse-link:focus {
+  color: #9d9d9d;
+}
+
 /* Keep the nav menu independent of scrolling and on top of other items */
 .main-nav {
     position: fixed;
@@ -35,7 +40,7 @@ hr {
 }
 
 .navbar li a {
-  padding: 5px 16px;
+  padding: 2px 16px;
 }
 
 .nav-dropdown li {
@@ -44,6 +49,12 @@ hr {
 
 .nav-dropdown ul {
   padding-inline-start: 10px;
+}
+
+.collapse-icon {
+  color: #9d9d9d;
+  position: absolute;
+  top: 1px;
 }
 
 /* Styles for larger screens */
@@ -85,3 +96,4 @@ hr {
         text-overflow: ellipsis;
     }
 }
+
