@@ -48,7 +48,7 @@ hr {
 }
 
 .nav-dropdown ul {
-  padding-inline-start: 10px;
+  padding-inline-start: 30px;
 }
 
 .collapse-icon {
@@ -94,6 +94,9 @@ hr {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+    .nav-dropdown ul {
+      padding-inline-start: 10px;
     }
 }
 
