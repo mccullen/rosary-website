@@ -25,6 +25,7 @@ import { PatronsComponent } from './patrons/patrons.component';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ContentsComponent } from './contents/contents.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     QuotesComponent,
     AboutComponent,
     ContactComponent,
-    PatronsComponent
+    PatronsComponent,
+    ContentsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -65,6 +67,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
       { path: LearnMoreComponent.learnMorePath, component: LearnMoreComponent },
       { path: PatronsComponent.patronsPath, component: PatronsComponent },
       { path: QuotesComponent.quotesPath, component: QuotesComponent },
+      { path: ContentsComponent.contentsPath, component: ContentsComponent },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
     ])

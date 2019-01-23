@@ -29,6 +29,11 @@
                   <div id="rosary-catechism-collapse" [collapse]="isRosaryCatechismCollapsed">
                     <ul class="nav navbar-nav">
                       <li [routerLinkActive]='["link-active"]'>
+                          <a [routerLink]='["/" + contentsPath ]' (click)='collapse()'>
+                            Contents
+                          </a>
+                      </li>
+                      <li [routerLinkActive]='["link-active"]'>
                           <a [routerLink]='["/" + dedicationPath ]' (click)='collapse()'>
                               Dedication
                           </a>

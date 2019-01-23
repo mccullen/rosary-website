@@ -11,6 +11,7 @@ import { QuotesComponent } from '../quotes/quotes.component';
 import { DedicationComponent } from '../dedication/dedication.component';
 import { PatronsComponent } from '../patrons/patrons.component';
 import { faChevronRight, faChevronDown, IconDefinition } from '@fortawesome/free-solid-svg-icons';
+import { ContentsComponent } from '../contents/contents.component';
 
 @Component({
   selector: 'app-nav-menu',
@@ -32,6 +33,7 @@ export class NavMenuComponent {
   quotesPath = QuotesComponent.quotesPath;
   dedicationPath = DedicationComponent.dedicationPath;
   patronsPath = PatronsComponent.patronsPath;
+  contentsPath = ContentsComponent.contentsPath;
 
   constructor() {
   }
