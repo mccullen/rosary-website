@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppService } from '../app.service';
 
 @Component({
   selector: 'app-quotes',
@@ -9,7 +10,7 @@ export class QuotesComponent implements OnInit {
 
   static quotesPath: string = "quotes";
 
-  constructor() { }
+  constructor(public appService: AppService) { }
 
   ngOnInit() {
   }
