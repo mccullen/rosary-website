@@ -21,10 +21,10 @@ h3 {
   font-weight: bold;
 }
 
-li {
+ul li {
   list-style-type: circle;
 }
 
-li li {
+ul li li {
   list-style-type: disc;
 }

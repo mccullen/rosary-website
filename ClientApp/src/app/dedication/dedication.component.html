@@ -1,3 +1,63 @@
-<p>
-  dedication works!
-</p>
+<div class="document">
+  <h1>Dedication</h1>
+
+  <ul>
+    <li>
+      <a [href]="toPriests.path">{{ toPriests.text }}</a>
+      <ul>
+        <li>
+          <a [href]="whyWasTheRosaryGiven.path">{{ whyWasTheRosaryGiven.text }}</a>
+        </li>
+        <li>
+          <a [href]="howPriestsSpreadDevotion.path">{{ howPriestsSpreadDevotion.text }}</a>
+        </li>
+        <li>
+          <a [href]="howMuchGoodFromPreaching.path">{{ howMuchGoodFromPreaching.text }}</a>
+        </li>
+        <li>
+          <a [href]="whyPreachingIsntEnough">{{ whyPreachingIsntEnough.text }}</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 [id]="toPriests.id">{{ toPriests.text }}</h2>
+
+  <h3 [id]="whyWasTheRosaryGiven.id">{{ whyWasTheRosaryGiven.text }}</h3>
+  <p>
+    Almighty God has given priests the Rosary because he wants them to use it as a means to
+    convert the most hardened sinners and most obstinate heritics.
+  </p>
+
+  <h3 [id]="howPriestsSpreadDevotion.id">{{ howPriestsSpreadDevotion.text }}</h3>
+  <p>
+    Priests must spread devotion to the Rosary by:
+  </p>
+  <ol>
+    <li>Practicing it (saying it every day)</li>
+    <li>Preaching it (encourging others to say it)</li>
+  </ol>
+
+  <h3 [id]="howMuchGoodFromPreaching.id">{{ howMuchGoodFromPreaching.text }}</h3>
+  <blockquote>
+    <p>
+      God and his blessed Mother will pour abundant grace into his soul, so that he may become God's instrument
+      for his glory; and his word, though simple, will do more good in one month than that of other preachers in
+      several years.
+    </p>
+    <cite>
+      St. Louis-Marie de Montfort,
+      <a [href]="appService.secretOfTheRosaryLink">
+        The Admirable Secret of the Rosary,
+      </a>
+      A White Rose
+    </cite>
+  </blockquote>
+
+  <h3 [id]="whyPreachingIsntEnough.id">{{ whyPreachingIsntEnough.text }}</h3>
+  <p>
+    Merely preaching isn't enough because people cannot be expected to act on your advice
+    if you do not practice it. No one can give what he does not have: "Jesus began to do and to teach."
+    (<i>Acts</i> 1:1)
+  </p>
+</div>
