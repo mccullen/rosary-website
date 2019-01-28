@@ -11,6 +11,11 @@ export class DedicationComponent implements OnInit {
 
   static dedicationPath: string = "dedication";
 
+  whyNotOfLittleImportance: ContentItem = new DefaultContentItem(
+    "why-not-of-little-importance",
+    "Why is the Rosary not of little importance?",
+    DedicationComponent.dedicationPath);
+
   toPriests: ContentItem = new DefaultContentItem(
     "to-priests",
     "A White Rose for Priests",

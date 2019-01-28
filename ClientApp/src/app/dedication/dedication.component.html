@@ -6,6 +6,9 @@
       <a [href]="toPriests.path">{{ toPriests.text }}</a>
       <ul>
         <li>
+          <a [href]="whyNotOfLittleImportance.path">{{ whyNotOfLittleImportance.text }}</a>
+        </li>
+        <li>
           <a [href]="whyWasTheRosaryGiven.path">{{ whyWasTheRosaryGiven.text }}</a>
         </li>
         <li>
@@ -15,13 +18,18 @@
           <a [href]="howMuchGoodFromPreaching.path">{{ howMuchGoodFromPreaching.text }}</a>
         </li>
         <li>
-          <a [href]="whyPreachingIsntEnough">{{ whyPreachingIsntEnough.text }}</a>
+          <a [href]="whyPreachingIsntEnough.path">{{ whyPreachingIsntEnough.text }}</a>
         </li>
       </ul>
     </li>
   </ul>
 
   <h2 [id]="toPriests.id">{{ toPriests.text }}</h2>
+
+  <h3 [id]="whyNotOfLittleImportance.id">{{ whyNotOfLittleImportance.text }}</h3>
+  <p>
+    The Rosary is not of little importance because it is a priceless treasure inspired by God.
+  </p>
 
   <h3 [id]="whyWasTheRosaryGiven.id">{{ whyWasTheRosaryGiven.text }}</h3>
   <p>
@@ -60,4 +68,5 @@
     if you do not practice it. No one can give what he does not have: "Jesus began to do and to teach."
     (<i>Acts</i> 1:1)
   </p>
+
 </div>
