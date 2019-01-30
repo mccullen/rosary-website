@@ -76,6 +76,31 @@ export class DedicationComponent implements OnInit {
     "Why should us sinners recite the entire Rosary every day for this crown of roses from Heaven?",
     DedicationComponent.dedicationPath);
 
+  toDevoutSouls: ContentItem = new DefaultContentItem(
+    "to-devout-souls",
+    "A Mystical Rose Tree for Devout Souls",
+    DedicationComponent.dedicationPath);
+
+  willItHinderOtherDevotions: ContentItem = new DefaultContentItem(
+    "will-it-hinder-other-devotions",
+    "Will reciting the Rosary hinder other devotions?",
+    DedicationComponent.dedicationPath);
+
+  mysticalRoseTree: ContentItem = new DefaultContentItem(
+    "mystical-rose-tree",
+    "How do the mysteries of the Rosary resemble a mystical rose tree?",
+    DedicationComponent.dedicationPath);
+
+  howToTendToTree: ContentItem = new DefaultContentItem(
+    "how-to-tend-to-tree",
+    "What must devout souls do to tend to this 'mystical rose tree'?",
+    DedicationComponent.dedicationPath);
+
+  howItMaintainsDevotions: ContentItem = new DefaultContentItem(
+    "how-it-maintains-devotions",
+    "How will saying the Rosary maintain and perfect other devotions?",
+    DedicationComponent.dedicationPath);
+
   constructor(public appService: AppService) { }
 
   ngOnInit() {

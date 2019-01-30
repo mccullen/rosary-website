@@ -49,9 +49,44 @@
         </li>
       </ul>
     </li>
+    <!-- /For Sinners -->
+
+    <!-- For Devout Souls -->
+    <li>
+      <a [href]="toDevoutSouls.path">{{ toDevoutSouls.text }}</a>
+      <ul>
+        <li>
+          <a [href]="willItHinderOtherDevotions.path">{{ willItHinderOtherDevotions.text }}</a>
+        </li>
+        <li>
+          <a [href]="mysticalRoseTree.path">{{ mysticalRoseTree.text }}</a>
+        </li>
+        <li>
+          <a [href]="howToTendToTree.path">{{ howToTendToTree.text }}</a>
+        </li>
+        <li>
+          <a [href]="howItMaintainsDevotions.path">{{ howItMaintainsDevotions.text }}</a>
+        </li>
+      </ul>
+    </li>
+    <!-- /For Devout Souls -->
   </ul>
 
   <h2 [id]="toPriests.id">{{ toPriests.text }}</h2>
+  <blockquote>
+    <p>
+      I beg of you to beware of thinking of the Rosary as something of little importance - as do ignorant
+      people, and even several great but proud scholars. Far from being insignificant, the Rosary is a priceless
+      treasure which is inspired by God.
+    </p>
+    <cite>
+      St. Louis-Marie de Montfort,
+      <a [href]="appService.secretOfTheRosaryLink">
+        The Admirable Secret of the Rosary,
+      </a>
+      A White Rose
+    </cite>
+  </blockquote>
 
   <h3 [id]="whyNotOfLittleImportance.id">{{ whyNotOfLittleImportance.text }}</h3>
   <p>
@@ -172,5 +207,58 @@
       </ul>
     </li>
   </ol>
+
+  <h2 [id]="toDevoutSouls.id">{{ toDevoutSouls.text }}</h2>
+  <blockquote>
+    <p>
+      This mystical rose tree is Jesus and
+      Mary in life, death and eternity.
+      Its green leaves are the Joyful Mysteries, the thorns the Sorrowful ones, and the flowers the
+      Glorious Mysteries of Jesus and Mary. The buds are the childhood of Jesus and Mary, and the open blooms
+      show us both of them in their sufferings, and the full-blown roses symbolize Jesus and Mary in their
+      triumph and glory. 
+    </p>
+    <cite>
+      St. Louis-Marie de Montfort,
+      <a [href]="appService.secretOfTheRosaryLink">
+        The Admirable Secret of the Rosary,
+      </a>
+      A Mystical Rose Tree
+    </cite>
+  </blockquote>
+
+  <h3 [id]="willItHinderOtherDevotions.id">{{ willItHinderOtherDevotions.text }}</h3>
+  <p>
+    No. It also inclies all to order and purity so, rather, it will maintain and perfect them.
+  </p>
+
+  <h3 [id]="mysticalRoseTree.id">{{ mysticalRoseTree.text }}</h3>
+  <ul>
+    <li>
+      Joyful Mysteries: Represented by green leaves and beauty of a rose. The buds are the childhood of Jesus and Mary.
+    </li>
+    <li>
+      Sorrowful Mysteries: Represented by sharp thorns that prick you. The open blooms show Jesus and Mary in their sufferings.
+    </li>
+    <li>
+      Glorious Mysteries: Represented by the flowers. The full-blown roses show Jesus and Mary in their triumph and glory.
+    </li>
+  </ul>
+
+  <h3 [id]="howToTendToTree.id">{{ howToTendToTree.text }}</h3>
+  <p>
+    Devout souls tend to this mystical rose tree the same way sinners do: 
+  </p>
+  <ul>
+    <li>Make a resolution to say it every day</li>
+    <li>Do good works in imitation of Jesus and Mary in the mysteries</li>
+  </ul>
+
+  <h3 [id]="howItMaintainsDevotions.id">{{ howItMaintainsDevotions.text }}</h3>
+  <p>
+    The Rosary maintains and perfects other devotions by being itself pure and well-ordered. By reciting it and doing good works daily,
+    it will attact predestinate and contemplative souls and keep you safe from the wild beasts on the ground. It will allow you to feed on
+    the fruit of life, our adorable Jesus, to whom be honour and glory forever and ever. 
+  </p>
 
 </div>
