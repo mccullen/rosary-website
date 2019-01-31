@@ -101,6 +101,31 @@ export class DedicationComponent implements OnInit {
     "How will saying the Rosary maintain and perfect other devotions?",
     DedicationComponent.dedicationPath);
 
+  toLittleChildren: ContentItem = new DefaultContentItem(
+    "to-little-children",
+    "A Rosebud for Little Children",
+    DedicationComponent.dedicationPath);
+
+  whatShouldChildrenDo: ContentItem = new DefaultContentItem(
+    "what-should-children-do",
+    "What should children do to crown Jesus and Mary with a wreath of Roses?",
+    DedicationComponent.dedicationPath);
+
+  sistersStory: ContentItem = new DefaultContentItem(
+    "sisters-story",
+    "What is the story of the two little sisters who prayed the Rosary together?",
+    DedicationComponent.dedicationPath);
+
+  importanceOfSistersStory: ContentItem = new DefaultContentItem(
+    "importance-of-sisters-story",
+    "What is the importance of the story of the sisters who prayed together for children?",
+    DedicationComponent.dedicationPath);
+
+  willWeSeeJesusAndMary: ContentItem = new DefaultContentItem(
+    "will-we-see-jesus-and-mary",
+    "If we say the Rosary every day, will we see Jesus and Mary like the younger sister?",
+    DedicationComponent.dedicationPath);
+
   constructor(public appService: AppService) { }
 
   ngOnInit() {

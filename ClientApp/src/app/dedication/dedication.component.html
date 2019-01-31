@@ -70,9 +70,22 @@
       </ul>
     </li>
     <!-- /For Devout Souls -->
+    <!-- For Little Children -->
+    <li>
+      <app-a-doc [contentItem]="toLittleChildren"></app-a-doc>
+      <ul>
+        <app-li-doc [contentItem]="whatShouldChildrenDo"></app-li-doc>
+        <app-li-doc [contentItem]="sistersStory"></app-li-doc>
+        <app-li-doc [contentItem]="importanceOfSistersStory"></app-li-doc>
+        <app-li-doc [contentItem]="willWeSeeJesusAndMary"></app-li-doc>
+      </ul>
+    </li>
+    <!-- /For Little Children -->
   </ul>
 
   <h2 [id]="toPriests.id">{{ toPriests.text }}</h2>
+
+  <h3 [id]="whyNotOfLittleImportance.id">{{ whyNotOfLittleImportance.text }}</h3>
   <blockquote>
     <p>
       I beg of you to beware of thinking of the Rosary as something of little importance - as do ignorant
@@ -87,11 +100,6 @@
       A White Rose
     </cite>
   </blockquote>
-
-  <h3 [id]="whyNotOfLittleImportance.id">{{ whyNotOfLittleImportance.text }}</h3>
-  <p>
-    The Rosary is not of little importance because it is a priceless treasure inspired by God.
-  </p>
 
   <h3 [id]="whyWasTheRosaryGiven.id">{{ whyWasTheRosaryGiven.text }}</h3>
   <p>
@@ -135,7 +143,7 @@
   <blockquote>
     <p>
       If you say the Rosary faithfully until death, I do assure you that, in spite of the gravity of your sins
-      "you shall receive a never-fading crown of glory." Even if you are on the brink of damnation, even if you
+      "you shall receive a never-fading crown of glory." (1 <i>Ptr.</i> 5:4) Even if you are on the brink of damnation, even if you
       have one foot in hell, even if you have sold your soul to the devil as sorcerers do who practice black magic,
       and even if you are a heretic as obstinate as a devil, sooner or later you will be converted and will amend
       your life and save your soul, if - and mark well what I say - if you say the Rosary devoutly every day until
@@ -261,4 +269,25 @@
     the fruit of life, our adorable Jesus, to whom be honour and glory forever and ever. 
   </p>
 
+  <app-h2-doc [contentItem]="toLittleChildren"></app-h2-doc>
+
+  <app-h3-doc [contentItem]="whatShouldChildrenDo"></app-h3-doc>
+  <p>
+    Children should say at least five mysteries of the Rosary with love and devotion.
+  </p>
+
+  <app-h3-doc [contentItem]="sistersStory"></app-h3-doc>
+  <p>
+    In Paraguay, two sisters were praying the Rosary in front of their house and Mary came and took with her the younger one. The older sister, thinking her younger sister had been kidnapped, told her parents, who had recently converted. Three days later, they found the younger sister at the front door. She said that the woman who she was praying to took her and gave her delicious food to eat and a beautiful baby boy to hold. Her parents told the Jesuit priest who instructed them into their reception into the Church.
+  </p>
+
+  <app-h3-doc [contentItem]="importanceOfSistersStory"></app-h3-doc>
+  <p>
+    The importance of this story is to show children that they should imitate these sisters and pray the Rosary every day. 
+  </p>
+
+  <app-h3-doc [contentItem]="willWeSeeJesusAndMary"></app-h3-doc>
+  <p>
+    Yes, but not necessarily in this life. But after you die you will see them in heaven for eternity. 
+  </p>
 </div>

@@ -26,6 +26,10 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ContentsComponent } from './contents/contents.component';
+import { H3DocComponent } from './resources/h3-doc/h3-doc.component';
+import { H2DocComponent } from './resources/h2-doc/h2-doc.component';
+import { LiDocComponent } from './resources/li-doc/li-doc.component';
+import { ADocComponent } from './resources/a-doc/a-doc.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +49,11 @@ import { ContentsComponent } from './contents/contents.component';
     AboutComponent,
     ContactComponent,
     PatronsComponent,
-    ContentsComponent
+    ContentsComponent,
+    H3DocComponent,
+    H2DocComponent,
+    LiDocComponent,
+    ADocComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
