@@ -1,6 +1,4 @@
 <h3 [id]="contentItem.id">
   {{ contentItem.text }}
-  <a [href]="contentItem.path">
-    <fa-icon class="header-link" [icon]="faHeaderLink" size="xs"></fa-icon>
-  </a>
+  <app-header-link-doc [contentItem]="contentItem" [size]="'xs'"></app-header-link-doc>
 </h3>

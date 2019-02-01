@@ -30,6 +30,7 @@ import { H3DocComponent } from './resources/h3-doc/h3-doc.component';
 import { H2DocComponent } from './resources/h2-doc/h2-doc.component';
 import { LiDocComponent } from './resources/li-doc/li-doc.component';
 import { ADocComponent } from './resources/a-doc/a-doc.component';
+import { HeaderLinkDocComponent } from './resources/header-link-doc/header-link-doc.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { ADocComponent } from './resources/a-doc/a-doc.component';
     H3DocComponent,
     H2DocComponent,
     LiDocComponent,
-    ADocComponent
+    ADocComponent,
+    HeaderLinkDocComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

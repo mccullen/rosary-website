@@ -1,1 +1,4 @@
-<h2 [id]="contentItem.id">{{ contentItem.text }}</h2>
+<h2 [id]="contentItem.id">
+  {{ contentItem.text }}
+  <app-header-link-doc [contentItem]="contentItem" [size]="'xs'"></app-header-link-doc>
+</h2>
