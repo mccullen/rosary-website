@@ -67,7 +67,7 @@ export class OriginAndNameComponent {
 
   seriesOfTheRosary: ContentItem = {
     id: "series-of-the-rosary",
-    text: "What are the four series of the Rosary?",
+    text: "What are the series of the Rosary?",
     get path() {
       return OriginAndNameComponent.originAndNamePath + "#" + this.id;
     }
