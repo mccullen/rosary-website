@@ -37,14 +37,10 @@
       </ul>
     </li>
     <li>
-      <a [href]="originAndName.path">{{ originAndName.text }}</a>
+      <app-a-doc [contentItem]="origin"></app-a-doc>
       <ul>
-        <li>
-          <a [href]="originOfTheRosary.path">{{ originOfTheRosary.text }}</a>
-        </li>
-        <li>
-          <a [href]="evolutionOfTheRosary.path">{{ evolutionOfTheRosary.text }}</a>
-        </li>
+        <app-li-doc [contentItem]="originOfTheRosary"></app-li-doc>
+        <app-li-doc [contentItem]="evolutionOfTheRosary"></app-li-doc>
       </ul>
     </li>
     <li>
@@ -142,19 +138,20 @@
   </ol>
 
 
-  <h2 [id]="originAndName.id">{{ originAndName.text }}</h2>
+  <app-h2-doc [contentItem]="origin"></app-h2-doc>
 
-  <h3 [id]="originOfTheRosary.id">{{ originOfTheRosary.text }}</h3>
+  <app-h3-doc [contentItem]="originOfTheRosary"></app-h3-doc>
   <p>
-    The origin of the Rosary is the Prayer of Christ and the Angelic Salutation.
+    The origin of the Rosary is the Prayer of Christ and the Angelic Salutation. It was the first prayer and devotion of the faithful and has been in use from the time of the
+    Apostles and disciples down to the present. But it has evolved over the centuries and taken upon a more mature form.
   </p>
   <p>See the second Rose of <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary</a></p>
 
-  <h3 [id]="evolutionOfTheRosary.id">{{ evolutionOfTheRosary.text }}</h3>
+  <app-h3-doc [contentItem]="evolutionOfTheRosary"></app-h3-doc>
   <p>
     <span class="def">1214:</span>
     The Church received the Rosary in its present form after
-    St. Dominic received it from the Blessed Virgin to convert the Albigensians (who no longer exist)
+    St. Dominic received it from the Blessed Virgin to convert the Albigensian heretics
     and other sinners. (St. Louis-Marie de Montfort, <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary</a>,
     Second Rose)
   </p>
@@ -178,6 +175,29 @@
     optional series of mysteries in his Apostolic Letter on the Rosary,
     <a [href]="app.onTheRosaryLink">Rosarium Virginis Mariae,</a>
     and provides guidance on how to better pray the Rosary. 
+  </p>
+
+  <app-h3-doc [contentItem]="stDominicStory"></app-h3-doc>
+  <p>
+    The story is recorded in the book <i>De Dignitate Psalterii</i> by Blessed Alan de la Roche. St. Dominic saw that the gravity of people's sins
+    was hindering the conversion of the Albigensians so he withdrew into a forest near Toulouse and prayed unceasingly for three days and three
+    nights. He did nothing but weep and do harsh penances to appease the anger of Almighty God. He disciplined his body so much that his body was lacerated
+    and he finally fell into a coma.
+  </p>
+  <p>
+    Then Our Lady appeared and told him that the battering ram in this kind of warfare has always been the Angelic Psalter,
+    the foundation stone of the New Testament. So she told him he must preach her Psalter to reach hardened souls and win them over to God. 
+    He went to the Cathedral  and at once unseen Angels rang the bells to gather the people together so he could preach. 
+  </p>
+  <p>
+    At the beginning of his sermon an appalling storm broke out and shook the earth. The sun was darkened and there was so much thunder and
+    lightening that all we very much afraid. There was a picture of Our Lady exposed in a prominent place and they saw her raise her arms to
+    Heaven three times to call down God's vegeance upon them if they failed to be converted, amend their lives, and seek the protection of the
+    Holy Mother of God.
+  </p>
+  <p>
+    The storm came to an end at the prayer of St. Dominic. He fervently and compellingly explained the importance and value of the Holy Rosary
+    so almost all the people of Toulouse embraced it and renounced their false beliefs and began leading Christian lives, giving up their former bad habits.
   </p>
 
   <h2 [id]="stDominic.id">{{ stDominic.text }}</h2>

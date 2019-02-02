@@ -15,9 +15,9 @@ export class OriginAndNameComponent {
     "Prayers",
     OriginAndNameComponent.originAndNamePath);
 
-  originAndName: ContentItem = new DefaultContentItem(
-    "origin-and-name",
-    "Origin and Name",
+  origin: ContentItem = new DefaultContentItem(
+    "origin",
+    "Origin",
     OriginAndNameComponent.originAndNamePath);
 
   stDominic: ContentItem = new DefaultContentItem(
@@ -88,6 +88,11 @@ export class OriginAndNameComponent {
       return OriginAndNameComponent.originAndNamePath + "#" + this.id;
     }
   };
+
+  stDominicStory: ContentItem = new DefaultContentItem(
+    "st-dominic-story",
+    "What is the full story of how St. Dominic received the rosary?",
+    OriginAndNameComponent.originAndNamePath);
 
   whyStDominicRecievedRosary: ContentItem = {
     id: "why-st-dominic-recieved-rosary",

@@ -12,7 +12,7 @@ var OriginAndNameComponent = /** @class */ (function () {
     function OriginAndNameComponent(app) {
         this.app = app;
         this.prayers = new content_item_1.DefaultContentItem("origin-and-name-prayers", "Prayers", OriginAndNameComponent_1.originAndNamePath);
-        this.originAndName = new content_item_1.DefaultContentItem("origin-and-name", "Origin and Name", OriginAndNameComponent_1.originAndNamePath);
+        this.origin = new content_item_1.DefaultContentItem("origin", "Origin", OriginAndNameComponent_1.originAndNamePath);
         this.stDominic = new content_item_1.DefaultContentItem("st-dominic", "St. Dominic", OriginAndNameComponent_1.originAndNamePath);
         this.whatIsTheRosary = {
             id: "what-is-the-rosary",
@@ -70,6 +70,7 @@ var OriginAndNameComponent = /** @class */ (function () {
                 return OriginAndNameComponent_1.originAndNamePath + "#" + this.id;
             }
         };
+        this.stDominicStory = new content_item_1.DefaultContentItem("st-dominic-story", "What is the full story of how St. Dominic received the rosary?", OriginAndNameComponent_1.originAndNamePath);
         this.whyStDominicRecievedRosary = {
             id: "why-st-dominic-recieved-rosary",
             text: "Why did St. Dominic received the Rosary?",
