@@ -73,11 +73,12 @@ var OriginAndNameComponent = /** @class */ (function () {
         this.stDominicStory = new content_item_1.DefaultContentItem("st-dominic-story", "What is the full story of how St. Dominic received the rosary?", OriginAndNameComponent_1.originAndNamePath);
         this.whyStDominicRecievedRosary = {
             id: "why-st-dominic-recieved-rosary",
-            text: "Why did St. Dominic received the Rosary?",
+            text: "Why did St. Dominic recieve the Rosary?",
             get path() {
                 return OriginAndNameComponent_1.originAndNamePath + "#" + this.id;
             }
         };
+        this.notreDameSermonStory = new content_item_1.DefaultContentItem("notre-dame-sermon-story", "What is the story of the sermon St. Dominic preached at Notre Dame in  Paris on the feast of St John the Evangelist?", OriginAndNameComponent_1.originAndNamePath);
         this.rosaryWeapon = {
             id: "rosary-weapon",
             text: "How did St. Dominic use the Rosary as a weapon?",
@@ -85,6 +86,7 @@ var OriginAndNameComponent = /** @class */ (function () {
                 return OriginAndNameComponent_1.originAndNamePath + "#" + this.id;
             }
         };
+        this.whyIsPreachingIneffective = new content_item_1.DefaultContentItem("why-is-preaching-ineffective", "Why is preaching against sin at the outset ineffective?", OriginAndNameComponent_1.originAndNamePath);
         this.weaponAgainstSin = {
             id: "weapon-against-sin",
             text: "Why is the Rosary a powerful weapon against sin?",
@@ -92,6 +94,7 @@ var OriginAndNameComponent = /** @class */ (function () {
                 return OriginAndNameComponent_1.originAndNamePath + "#" + this.id;
             }
         };
+        this.whyLovePrayer = new content_item_1.DefaultContentItem("why-love-prayer", "Why should priests kindle a love of prayer in people's hearts, especially the Angelic Psalter?", OriginAndNameComponent_1.originAndNamePath);
         this.rainFromHeaven = {
             id: "rain-from-heaven",
             text: "Why is the Angelic Salutation sometimes called “rain from heaven”?",

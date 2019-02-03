@@ -96,11 +96,16 @@ export class OriginAndNameComponent {
 
   whyStDominicRecievedRosary: ContentItem = {
     id: "why-st-dominic-recieved-rosary",
-    text: "Why did St. Dominic received the Rosary?",
+    text: "Why did St. Dominic recieve the Rosary?",
     get path() {
       return OriginAndNameComponent.originAndNamePath + "#" + this.id;
     }
   };
+
+  notreDameSermonStory: ContentItem = new DefaultContentItem(
+    "notre-dame-sermon-story",
+    "What is the story of the sermon St. Dominic preached at Notre Dame in  Paris on the feast of St John the Evangelist?",
+    OriginAndNameComponent.originAndNamePath);
 
   rosaryWeapon: ContentItem = {
     id: "rosary-weapon",
@@ -110,6 +115,11 @@ export class OriginAndNameComponent {
     }
   };
 
+  whyIsPreachingIneffective: ContentItem = new DefaultContentItem(
+    "why-is-preaching-ineffective",
+    "Why is preaching against sin at the outset ineffective?",
+    OriginAndNameComponent.originAndNamePath);
+
   weaponAgainstSin: ContentItem = {
     id: "weapon-against-sin",
     text: "Why is the Rosary a powerful weapon against sin?",
@@ -117,6 +127,11 @@ export class OriginAndNameComponent {
       return OriginAndNameComponent.originAndNamePath + "#" + this.id;
     }
   };
+
+  whyLovePrayer: ContentItem = new DefaultContentItem(
+    "why-love-prayer",
+    "Why should priests kindle a love of prayer in people's hearts, especially the Angelic Psalter?",
+    OriginAndNameComponent.originAndNamePath);
 
   rainFromHeaven: ContentItem = {
     id: "rain-from-heaven",

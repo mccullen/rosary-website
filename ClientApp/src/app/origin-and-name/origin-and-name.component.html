@@ -45,17 +45,20 @@
       </ul>
     </li>
     <li>
-      <a [href]="stDominic">{{ stDominic.text }}</a>
+      <app-a-doc [contentItem]="stDominic"></app-a-doc>
       <ul>
         <li>
           <a [href]="whyStDominicRecievedRosary.path">{{ whyStDominicRecievedRosary.text }}</a>
         </li>
+        <app-li-doc [contentItem]="notreDameSermonStory"></app-li-doc>
         <li>
           <a [href]="rosaryWeapon.path">{{ rosaryWeapon.text }}</a>
         </li>
+        <app-li-doc [contentItem]="whyIsPreachingIneffective"></app-li-doc>
         <li>
           <a [href]="weaponAgainstSin.path">{{ weaponAgainstSin.text }}</a>
         </li>
+        <app-li-doc [contentItem]="whyLovePrayer"></app-li-doc>
         <li>
           <a [href]="rainFromHeaven.path">{{ rainFromHeaven.text }}</a>
         </li>
@@ -202,10 +205,42 @@
   </p>
 
   <h2 [id]="stDominic.id">{{ stDominic.text }}</h2>
+  <blockquote>
+    <p>
+      Inspired by the Holy Spirit, instructed by the Blessed Virgin as well as by his own experience, Saint
+      Dominic preached the Rosary for the rest of his life. He preached it by his example as well as by his
+      sermons, in cities and in country places, to people of high station and low, before scholars and the
+      uneducated, to Catholics and to heretics.
+       The Rosary, which he said every day, was his preparation for every sermon and his little tryst with
+      our Lady immediately after preaching. 
+    </p>
+    <cite>
+      St. Louis-Marie de Montfort,
+      <a [href]="app.secretOfTheRosaryLink">
+        The Admirable Secret of the Rosary,
+      </a>
+      Third Rose
+    </cite>
+  </blockquote>
 
   <h3 [id]="whyStDominicRecievedRosary.id">{{ whyStDominicRecievedRosary.text }}</h3>
   <p>
     St. Dominic received the rosary from the Blessed Virgin as a weapon which the Blessed Trinity wants to use to convert the Albingensians and reform the world. 
+  </p>
+
+  <app-h3-doc [contentItem]="notreDameSermonStory"></app-h3-doc>
+  <p>
+    St. Dominic had planned to give a sermon at Notre Dame in Paris on the feast of St. John the Evangelist. He was anxious to give a brilliant sermon because of
+    the high intellectual stature of the congregation. But an hour before he was going to preach,
+    while he was prayerfully preparing by recollectedly sayig his Rosary as he always did before sermons, he fell into ecstasy and
+    Our Lady appeared to him with a book and said that, while his sermon was good, hers was better.
+    (St. Louis-Marie de Montfort, The Admirable Secret of the Rosary, Third Rose, referencing Carthagena and Blessed Alan de la Roche in De Dignitate Psalterii)
+  </p>
+  <p>
+    In spite of the feast day, St. Dominic only mentioned St. John to say he had been found worthy to be the guardian of the Queen of Heaven. 
+    He spoke in the simpliciy of the Holy Spirit to the congregation, which was made up of theologians and other eminent people.
+    He preached the Holy Rosary and explained the Hail Mary word by word as he would to children, using simple comparisons and
+    examples from every day life (ibid).
   </p>
 
   <h3 [id]="rosaryWeapon.id">{{ rosaryWeapon.text }}</h3>
@@ -216,9 +251,20 @@
     Third Rose)
   </p>
 
+  <app-h3-doc [contentItem]="whyIsPreachingIneffective"></app-h3-doc>
+  <p>
+    Preaching against sin at the offset is ineffective because the sinner is not in the right frame of mind to really benefit by it.
+  </p>
+
   <h3 [id]="weaponAgainstSin.id">{{ weaponAgainstSin.text }}</h3>
   <p>
     The Rosary is a powerful weapon against sin because places the sinner in the right frame of mind to really benefit from hearing the truth about the evils of sin and the goodness of God.
+  </p>
+
+  <app-h3-doc [contentItem]="whyLovePrayer"></app-h3-doc>
+  <p>
+    Before anything else, priests should kindle a love of prayer in people's hearts because, by perservering, God, in his mercy, could hardly refuse to
+    give them His grace. 
   </p>
 
   <h3 [id]="rainFromHeaven.id">{{ rainFromHeaven.text }}</h3>
@@ -228,7 +274,8 @@
 
   <h3 [id]="whyPrayHailMaryBeforeSermons.id">{{ whyPrayHailMaryBeforeSermons.text }}</h3>
   <p>
-    The Hail Mary is prayed before sermons because Our Lady revealed to St. Dominic that this would allow his bear the results he hoped for. 
+    The Hail Mary is prayed before sermons because Our Lady revealed to St. Dominic that this would allow his sermons to bear the results he hoped for.
+    This is why priests say it with the faithful before preaching, to ask for God's grace.
   </p>
 
   <h3 [id]="whyUrgeTheRosary.id">{{ whyUrgeTheRosary.text }}</h3>
