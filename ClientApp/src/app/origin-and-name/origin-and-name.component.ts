@@ -236,6 +236,32 @@ export class OriginAndNameComponent {
     "Why is the Rosary divided up into three parts?",
     OriginAndNameComponent.originAndNamePath);
 
+  // Crown of Roses
+  crownOfRoses = new DefaultContentItem(
+    "crown-of-roses",
+    "Crown of Roses",
+    OriginAndNameComponent.originAndNamePath);
+
+  whyCrownOfRoses = new DefaultContentItem(
+    "why-crown-of-roses",
+    "Why is the Rosary a “Crown of Roses”?",
+    OriginAndNameComponent.originAndNamePath);
+  
+  prayersSymbolizedAsRoses = new DefaultContentItem(
+    "prayers-symbolized-as-roses",
+    "How are the prayers of the Rosary symbolized in terms of roses?",
+    OriginAndNameComponent.originAndNamePath);
+
+  alphonsusStory = new DefaultContentItem(
+    "alphonsusStory",
+    "What is the story of the Jesuit, Brother Alphonsus Rodriguez, who said his Rosary with great fervor?",
+    OriginAndNameComponent.originAndNamePath);
+
+  youngFrierStory = new DefaultContentItem(
+    "young-frier-story",
+    "What do the chronicles of Saint Francis tell about the young frier who said the Rosary before dinner?",
+    OriginAndNameComponent.originAndNamePath);
+
   // Other
 
   whyPerserveranceIsImportant: ContentItem = {
@@ -254,13 +280,14 @@ export class OriginAndNameComponent {
     }
   };
 
+  /*
   crownOfRoses: ContentItem = {
     id: "crown-of-roses",
     text: "Why is the Rosary a “Crown of Roses”?",
     get path() {
       return OriginAndNameComponent.originAndNamePath + "#" + this.id;
     }
-  };
+  };*/
 
   essenceOfRosary: ContentItem = {
     id: "essence-of-rosary",

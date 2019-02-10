@@ -134,6 +134,12 @@ var OriginAndNameComponent = /** @class */ (function () {
         this.whyMarysPsalter = new content_item_1.DefaultContentItem("why-marys-psalter", "Why was the Rosary called the “Psalter of Jesus and Mary” until devotion to it was reestablished by Blessed Alan in 1460?", OriginAndNameComponent_1.originAndNamePath);
         this.whyBetterThanPsalms = new content_item_1.DefaultContentItem("why-better-than-psalms", "Why can the Rosary be considered more valuable than the Psalms of David?", OriginAndNameComponent_1.originAndNamePath);
         this.whyThreeParts = new content_item_1.DefaultContentItem("why-three-parts", "Why is the Rosary divided up into three parts?", OriginAndNameComponent_1.originAndNamePath);
+        // Crown of Roses
+        this.crownOfRoses = new content_item_1.DefaultContentItem("crown-of-roses", "Crown of Roses", OriginAndNameComponent_1.originAndNamePath);
+        this.whyCrownOfRoses = new content_item_1.DefaultContentItem("why-crown-of-roses", "Why is the Rosary a “Crown of Roses”?", OriginAndNameComponent_1.originAndNamePath);
+        this.prayersSymbolizedAsRoses = new content_item_1.DefaultContentItem("prayers-symbolized-as-roses", "How are the prayers of the Rosary symbolized in terms of roses?", OriginAndNameComponent_1.originAndNamePath);
+        this.alphonsusStory = new content_item_1.DefaultContentItem("alphonsusStory", "What is the story of the Jesuit, Brother Alphonsus Rodriguez, who said his Rosary with great fervor?", OriginAndNameComponent_1.originAndNamePath);
+        this.youngFrierStory = new content_item_1.DefaultContentItem("young-frier-story", "What do the chronicles of Saint Francis tell about the young frier who said the Rosary before dinner?", OriginAndNameComponent_1.originAndNamePath);
         // Other
         this.whyPerserveranceIsImportant = {
             id: "why-perserverence-is-important",
@@ -149,13 +155,14 @@ var OriginAndNameComponent = /** @class */ (function () {
                 return OriginAndNameComponent_1.originAndNamePath + "#" + this.id;
             }
         };
-        this.crownOfRoses = {
-            id: "crown-of-roses",
-            text: "Why is the Rosary a “Crown of Roses”?",
-            get path() {
-                return OriginAndNameComponent_1.originAndNamePath + "#" + this.id;
-            }
-        };
+        /*
+        crownOfRoses: ContentItem = {
+          id: "crown-of-roses",
+          text: "Why is the Rosary a “Crown of Roses”?",
+          get path() {
+            return OriginAndNameComponent.originAndNamePath + "#" + this.id;
+          }
+        };*/
         this.essenceOfRosary = {
             id: "essence-of-rosary",
             text: "What is the essence of the Rosary today?",

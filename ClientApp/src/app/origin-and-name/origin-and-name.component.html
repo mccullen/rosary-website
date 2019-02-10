@@ -81,6 +81,7 @@
       </ul>
     </li>
     <!-- /Blessed Alan -->
+
     <!-- Confraternity -->
     <li>
       <app-a-doc [contentItem]="confraternity"></app-a-doc>
@@ -93,6 +94,7 @@
       </ul>
     </li>
     <!-- /Confraternity -->
+    
     <!-- Mary's Psalter -->
     <li>
       <app-a-doc [contentItem]="marysPsalter"></app-a-doc>
@@ -103,6 +105,19 @@
       </ul>
     </li>
     <!-- /Mary's Psalter -->
+
+    <!-- Crown of Roses -->
+    <li>
+      <app-a-doc [contentItem]="crownOfRoses"></app-a-doc>
+      <ul>
+        <app-li-doc [contentItem]="whatDoesRosaryMean"></app-li-doc>
+        <app-li-doc [contentItem]="whyCrownOfRoses"></app-li-doc>
+        <app-li-doc [contentItem]="prayersSymbolizedAsRoses"></app-li-doc>
+        <app-li-doc [contentItem]="alphonsusStory"></app-li-doc>
+        <app-li-doc [contentItem]="youngFrierStory"></app-li-doc>
+      </ul>
+    </li>
+    <!-- /Crown of Roses -->
     <li>
       <a [href]="whyPerserveranceIsImportant.path">{{ whyPerserveranceIsImportant.text }}</a>
     </li>
@@ -458,12 +473,10 @@
 
   <!-- /Mary's Psalter -->
 
-  <h2 [id]="whyPerserveranceIsImportant.id">{{ whyPerserveranceIsImportant.text }}</h2>
-  <p>
-    Coming soon...
-  </p>
+  <!-- Crown of Roses -->
+  <app-h2-doc [contentItem]="crownOfRoses"></app-h2-doc>
 
-  <h2 [id]="whatDoesRosaryMean.id">{{ whatDoesRosaryMean.text }}</h2>
+  <app-h3-doc [contentItem]="whatDoesRosaryMean"></app-h3-doc>
   <p>
     The name “Rosary” means “Crown of Roses”
     (St. Louis-Marie de Montfort,
@@ -471,12 +484,61 @@
     Seventh Rose)
   </p>
 
-  <h2 [id]="crownOfRoses.id">{{ crownOfRoses.text }}</h2>
+  <app-h3-doc [contentItem]="whyCrownOfRoses"></app-h3-doc>
   <p>
-    Every time people say the Rosary devoutly they place on the heads of Jesus and Mary a crown of roses. There is a white rose for each Hail Mary and a red rose for each Our Father.
+    The Rosary is a Crown of Roses because "every
+    time people say the Rosary devoutly they place on the heads of Jesus and Mary 153 white roses and sixteen
+    red roses. Being heavenly flowers, these roses will never fade or lose their beauty."
     (St. Louis-Marie de Montfort,
     <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary,</a>
     Seventh Rose)
+  </p>
+
+  <app-h3-doc [contentItem]="prayersSymbolizedAsRoses"></app-h3-doc>
+  <p>
+    The Rosary is symbolized as being of heavenly flowers. That is, roses that will never fade or lose their exquisite beauty as do temporal things of this world. The prayers are represented by different roses
+  </p>
+  <ul>
+    <li>Hail Mary: White Rose</li>
+    <li>Our Father: Red Rose</li>
+    <li>Rosary of Five Decades: little wreath of flowers or small crown of heavenly roses</li>
+    <li>Entire Rosary: large Crown of Roses</li>
+  </ul>
+
+  <app-h3-doc [contentItem]="alphonsusStory"></app-h3-doc>
+  <p>
+    He said his Rosary with such fervor that he often saw a red rose come out of his mouth at each Our Father and a white rose at each Hail Mary.
+  </p>
+
+  <app-h3-doc [contentItem]="youngFrierStory"></app-h3-doc>
+  <blockquote>
+    <p>
+      The chronicles of St. Francis tell of a young friar who had the praiseworthy habit of saying this
+      crown of our Lady every day before dinner. One day, for some reason or other, he did not manage to say it.
+      The refectory bell had already been rung when he asked the Superior to allow him to say it before coming to
+      the table, and, having obtained permission, he withdrew to his cell to pray.
+    </p>
+    <p>
+       After he had been gone a long time, the Superior sent another friar to fetch him, and he found him
+      in his room bathed in a heavenly light in the presence of our Lady and two angels. Beautiful roses kept
+      issuing from his mouth at each Hail Mary, and the two angels were taking them one by one and placing
+      them on our Lady's head, while she smilingly accepted them. Finally, two other friars who had been sent to
+      find out what had happened to the first two saw the same scene, and our Lady did not leave until the whole
+      Rosary had been said. 
+    </p>
+    <cite>
+      St. Louis-Marie de Montfort,
+      <a [href]="app.secretOfTheRosaryLink">
+        The Admirable Secret of the Rosary,
+      </a>
+      Sixth Rose
+    </cite>
+  </blockquote>
+  <!-- /Crown of Roses -->
+
+  <h2 [id]="whyPerserveranceIsImportant.id">{{ whyPerserveranceIsImportant.text }}</h2>
+  <p>
+    Coming soon...
   </p>
 
   <h2 [id]="essenceOfRosary.id">{{ essenceOfRosary.text }}</h2>
