@@ -129,6 +129,11 @@ var OriginAndNameComponent = /** @class */ (function () {
         this.rosaryClashesWithDuties = new content_item_1.DefaultContentItem("rosary-clashes-with-duties", "What if saying the Rosary clashes with your duties or health?", OriginAndNameComponent_1.originAndNamePath);
         this.unableToSayRosary = new content_item_1.DefaultContentItem("unable-to-say-rosary", "Will you still receive the benefits of the Confraternity if you are unable to say the Rosary or genuinely forget?", OriginAndNameComponent_1.originAndNamePath);
         this.failDueToCarelessness = new content_item_1.DefaultContentItem("fail-due-to-carelessness", "What if you fail to say the Rosary out of carelessness or lazyness?", OriginAndNameComponent_1.originAndNamePath);
+        // Mary's Psalter
+        this.marysPsalter = new content_item_1.DefaultContentItem("marys-psalter", "Mary's Psalter", OriginAndNameComponent_1.originAndNamePath);
+        this.whyMarysPsalter = new content_item_1.DefaultContentItem("why-marys-psalter", "Why was the Rosary called the “Psalter of Jesus and Mary” until devotion to it was reestablished by Blessed Alan in 1460?", OriginAndNameComponent_1.originAndNamePath);
+        this.whyBetterThanPsalms = new content_item_1.DefaultContentItem("why-better-than-psalms", "Why can the Rosary be considered more valuable than the Psalms of David?", OriginAndNameComponent_1.originAndNamePath);
+        this.whyThreeParts = new content_item_1.DefaultContentItem("why-three-parts", "Why is the Rosary divided up into three parts?", OriginAndNameComponent_1.originAndNamePath);
         // Other
         this.whyPerserveranceIsImportant = {
             id: "why-perserverence-is-important",

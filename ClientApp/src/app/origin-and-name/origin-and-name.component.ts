@@ -215,6 +215,27 @@ export class OriginAndNameComponent {
     "What if you fail to say the Rosary out of carelessness or lazyness?",
     OriginAndNameComponent.originAndNamePath);
 
+  // Mary's Psalter
+  marysPsalter = new DefaultContentItem(
+    "marys-psalter",
+    "Mary's Psalter",
+    OriginAndNameComponent.originAndNamePath);
+
+  whyMarysPsalter = new DefaultContentItem(
+    "why-marys-psalter",
+    "Why was the Rosary called the “Psalter of Jesus and Mary” until devotion to it was reestablished by Blessed Alan in 1460?",
+    OriginAndNameComponent.originAndNamePath);
+
+  whyBetterThanPsalms = new DefaultContentItem(
+    "why-better-than-psalms",
+    "Why can the Rosary be considered more valuable than the Psalms of David?",
+    OriginAndNameComponent.originAndNamePath);
+
+  whyThreeParts = new DefaultContentItem(
+    "why-three-parts",
+    "Why is the Rosary divided up into three parts?",
+    OriginAndNameComponent.originAndNamePath);
+
   // Other
 
   whyPerserveranceIsImportant: ContentItem = {

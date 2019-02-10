@@ -93,6 +93,16 @@
       </ul>
     </li>
     <!-- /Confraternity -->
+    <!-- Mary's Psalter -->
+    <li>
+      <app-a-doc [contentItem]="marysPsalter"></app-a-doc>
+      <ul>
+        <app-li-doc [contentItem]="whyMarysPsalter"></app-li-doc>
+        <app-li-doc [contentItem]="whyBetterThanPsalms"></app-li-doc>
+        <app-li-doc [contentItem]="whyThreeParts"></app-li-doc>
+      </ul>
+    </li>
+    <!-- /Mary's Psalter -->
     <li>
       <a [href]="whyPerserveranceIsImportant.path">{{ whyPerserveranceIsImportant.text }}</a>
     </li>
@@ -405,8 +415,48 @@
       Fifth Rose
     </cite>
   </blockquote>
-
   <!-- /Confraternity -->
+
+  <!-- Mary's Psalter -->
+  <app-h2-doc [contentItem]="marysPsalter"></app-h2-doc>
+
+  <app-h3-doc [contentItem]="whyMarysPsalter"></app-h3-doc>
+  <p>
+    The Rosary was called the Psalter of Jesus and Mary because it has the same number of Angelic Salutations as there are psalms in the Book of the Psalms of David. Since simple and uneducated people were not able to say the Psalms of David the Rosary is held to be just as fruitful for them.
+  </p>
+
+  <app-h3-doc [contentItem]="whyBetterThanPsalms"></app-h3-doc>
+  <ol>
+    <li>It bears the fruit of the Word Incarnate whereas David’s Psalter only prophecies His coming.</li>
+    <li>The fruit of the real thing is more important that its prefiguration</li>
+    <li>It is the direct work of the Most Blessed Trinity and was not made through a human instrument.</li>
+  </ol>
+
+  <app-h3-doc [contentItem]="whyThreeParts"></app-h3-doc>
+  <blockquote>
+    <p>
+      The Psalter or Rosary of our Lady is divided into three chaplets of five decades each, for the
+      following reasons:
+    </p>
+    <ol>
+       <li>to honour the three persons of the Blessed Trinity</li>
+       <li>to honour the life, death and glory of Jesus Christ</li>
+       <li>to imitate the Church triumphant, to help the members of the Church militant, and to bring relief
+        to the Church suffering</li>
+       <li>to imitate the three groups into which the psalms are divided, the first being for the purgative life,
+        the second for the illuminative life, and the third for the unitive life</li>
+       <li>to give us graces in abundance during life, peace at death, and glory in eternity</li>
+    </ol>
+    <cite>
+      St. Louis-Marie de Montfort,
+      <a [href]="app.secretOfTheRosaryLink">
+        The Admirable Secret of the Rosary,
+      </a>
+      Sixth Rose
+    </cite>
+  </blockquote>
+
+  <!-- /Mary's Psalter -->
 
   <h2 [id]="whyPerserveranceIsImportant.id">{{ whyPerserveranceIsImportant.text }}</h2>
   <p>
