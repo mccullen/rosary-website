@@ -157,6 +157,35 @@ export class OriginAndNameComponent {
     }
   };
 
+  // Blessed Alan
+  blessedAlan: ContentItem = new DefaultContentItem(
+    "blessed-alan",
+    "Blessed Alan de la Roche",
+    OriginAndNameComponent.originAndNamePath);
+
+  whyRosaryWasNeglected: ContentItem = new DefaultContentItem(
+    "why-rosary-was-neglected",
+    "Why did people begin to neglect the Rosary after the first century that the Rosary Confraternity was established by St. Dominic?",
+    OriginAndNameComponent.originAndNamePath
+  );
+
+  consequenceOfNeglect: ContentItem = new DefaultContentItem(
+    "consequence-of-neglect",
+    "What was the consequence of neglecting God’s grace and the Rosary?",
+    OriginAndNameComponent.originAndNamePath);
+
+  whyBlessedAlanChosen: ContentItem = new DefaultContentItem(
+    "why-blessed-alan-chosen",
+    "Why did Our Lady choose Blessed Alan de la Roche to revive the Rosary Confraternity?",
+    OriginAndNameComponent.originAndNamePath);
+
+  howAlanReceivedMessage: ContentItem = new DefaultContentItem(
+    "how-alan-recieved-message",
+    "How did Blessed Alan receive his urgent message to reestablish the Rosary Confraternity?",
+    OriginAndNameComponent.originAndNamePath);
+
+  // Other
+
   whyPerserveranceIsImportant: ContentItem = {
     id: "why-perserverence-is-important",
     text: "Why is perseverance important in praying the Rosary?",

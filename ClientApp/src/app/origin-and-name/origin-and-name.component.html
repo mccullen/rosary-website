@@ -70,6 +70,17 @@
         </li>
       </ul>
     </li>
+    <!-- Blessed Alan -->
+    <li>
+      <app-a-doc [contentItem]="blessedAlan"></app-a-doc>
+      <ul>
+        <app-li-doc [contentItem]="whyRosaryWasNeglected"></app-li-doc>
+        <app-li-doc [contentItem]="consequenceOfNeglect"></app-li-doc>
+        <app-li-doc [contentItem]="whyBlessedAlanChosen"></app-li-doc>
+        <app-li-doc [contentItem]="howAlanReceivedMessage"></app-li-doc>
+      </ul>
+    </li>
+    <!-- /Blessed Alan -->
     <li>
       <a [href]="whyPerserveranceIsImportant.path">{{ whyPerserveranceIsImportant.text }}</a>
     </li>
@@ -284,6 +295,58 @@
     (St. Louis-Marie de Montfort,
     <a [href]="app.secretOfTheRosaryLink">The Admirable Secret of the Rosary,</a>
     Third Rose)
+  </p>
+
+  <app-h2-doc [contentItem]="blessedAlan"></app-h2-doc>
+
+  <app-h3-doc [contentItem]="whyRosaryWasNeglected"></app-h3-doc>
+  <p>
+    People began to neglect the Rosary because the Rosary Confraternity lost its first fervor because it is subject to human free will and the devil wanted to block the flow of God’s grace.
+  </p>
+
+  <app-h3-doc [contentItem]="consequenceOfNeglect"></app-h3-doc>
+  <ol>
+    <li>
+      In 1349, God punished the whole of Europe with a terrible plague, which brought desolation wherever it came. 
+    </li>
+    <li>
+      The heresy of <a href="http://www.newadvent.org/cathen/06089c.htm">Flagellants</a>
+    </li>
+    <li>
+      The tragic schism in 1376
+    </li>
+  </ol>
+
+  <app-h3-doc [contentItem]="whyBlessedAlanChosen"></app-h3-doc>
+  <p>
+    Our Lady chose Blessed Alan de la Roche to revive the Rosary Confraternity because he was one of the Dominican Fathers from the monastery at Dinan in Brittany where the Rosary Confraternity had originally been started. So it was fitting that it should be reestablished there. 
+  </p>
+
+  <app-h3-doc [contentItem]="howAlanReceivedMessage"></app-h3-doc>
+  <p>
+    Blessed Alan received His urgent message after a warning from Our Lord. When he was saying mass, Our Lord spoke to him in the Sacred Host:
+  </p>
+  <blockquote>
+    <p>
+      How can you crucify me again so soon?" Jesus said. "What did
+      you say, Lord?" asked Blessed Alan, horrified. "You crucified me once before by your sins," answered
+      Jesus, "and I would willingly be crucified again rather than have my Father offended by the sins you used to
+      commit. You are crucifying me again now because you have all the learning and understanding that you
+      need to preach my Mother's Rosary, and you are not doing it. If you only did that, you could teach many
+      souls the right path and lead them away from sin. But you are not doing it, and so you yourself are guilty of
+      the sins that they commit.
+    </p>
+    <cite>
+      St. Louis-Marie de Montfort,
+      <a [href]="app.secretOfTheRosaryLink">
+        The Admirable Secret of the Rosary,
+      </a>
+      Fourth Rose
+    </cite>
+  </blockquote>
+  <p>
+    Our Lady also appeared to him to inspire him to preach the rosary more and more. 
+    St. Dominic also appeared to him and told him how he preached the Holy Rosary and his sermons had borne great fruit and many people had been converted.
   </p>
 
   <h2 [id]="whyPerserveranceIsImportant.id">{{ whyPerserveranceIsImportant.text }}</h2>
