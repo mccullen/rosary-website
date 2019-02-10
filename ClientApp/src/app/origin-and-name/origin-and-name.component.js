@@ -140,6 +140,13 @@ var OriginAndNameComponent = /** @class */ (function () {
         this.prayersSymbolizedAsRoses = new content_item_1.DefaultContentItem("prayers-symbolized-as-roses", "How are the prayers of the Rosary symbolized in terms of roses?", OriginAndNameComponent_1.originAndNamePath);
         this.alphonsusStory = new content_item_1.DefaultContentItem("alphonsusStory", "What is the story of the Jesuit, Brother Alphonsus Rodriguez, who said his Rosary with great fervor?", OriginAndNameComponent_1.originAndNamePath);
         this.youngFrierStory = new content_item_1.DefaultContentItem("young-frier-story", "What do the chronicles of Saint Francis tell about the young frier who said the Rosary before dinner?", OriginAndNameComponent_1.originAndNamePath);
+        // Marvels of the Rosary
+        this.marvelsOfTheRosary = new content_item_1.DefaultContentItem("marvels-of-the-rosary", "Marvels of the Rosary", OriginAndNameComponent_1.originAndNamePath);
+        this.stDominicReward = new content_item_1.DefaultContentItem("st-dominic-reward", "How did Our Lady reward St. Dominic for his devotion to the Rosary?", OriginAndNameComponent_1.originAndNamePath);
+        this.blessedAlanReward = new content_item_1.DefaultContentItem("blessed-alan-reward", "How did Our Lady reward Blessed Alan de la Roche for his devotion to the Rosary?", OriginAndNameComponent_1.originAndNamePath);
+        this.whoOurLadyRewards = new content_item_1.DefaultContentItem("who-our-lady-rewards", "Who does Our Lady reward?", OriginAndNameComponent_1.originAndNamePath);
+        this.kingAlphonsusStory = new content_item_1.DefaultContentItem("king-alphonsus-story", "What is the story of King Alphonsus and the Rosary he wore on his belt?", OriginAndNameComponent_1.originAndNamePath);
+        this.whyFollowRosaryDevotions = new content_item_1.DefaultContentItem("why-follow-rosary-devotions", "Why should people who love the Blessed Virgin follow the example of King Alphonsus and the saints who were devoted to the Rosary?", OriginAndNameComponent_1.originAndNamePath);
         // Other
         this.whyPerserveranceIsImportant = {
             id: "why-perserverence-is-important",

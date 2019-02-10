@@ -262,6 +262,37 @@ export class OriginAndNameComponent {
     "What do the chronicles of Saint Francis tell about the young frier who said the Rosary before dinner?",
     OriginAndNameComponent.originAndNamePath);
 
+  // Marvels of the Rosary
+  marvelsOfTheRosary = new DefaultContentItem(
+    "marvels-of-the-rosary",
+    "Marvels of the Rosary",
+    OriginAndNameComponent.originAndNamePath);
+
+  stDominicReward = new DefaultContentItem(
+    "st-dominic-reward",
+    "How did Our Lady reward St. Dominic for his devotion to the Rosary?",
+    OriginAndNameComponent.originAndNamePath);
+  
+  blessedAlanReward = new DefaultContentItem(
+    "blessed-alan-reward",
+    "How did Our Lady reward Blessed Alan de la Roche for his devotion to the Rosary?",
+    OriginAndNameComponent.originAndNamePath);
+
+  whoOurLadyRewards = new DefaultContentItem(
+    "who-our-lady-rewards",
+    "Who does Our Lady reward?",
+    OriginAndNameComponent.originAndNamePath);
+
+  kingAlphonsusStory = new DefaultContentItem(
+    "king-alphonsus-story",
+    "What is the story of King Alphonsus and the Rosary he wore on his belt?",
+    OriginAndNameComponent.originAndNamePath);
+
+  whyFollowRosaryDevotions = new DefaultContentItem(
+    "why-follow-rosary-devotions",
+    "Why should people who love the Blessed Virgin follow the example of King Alphonsus and the saints who were devoted to the Rosary?",
+    OriginAndNameComponent.originAndNamePath);
+
   // Other
 
   whyPerserveranceIsImportant: ContentItem = {
