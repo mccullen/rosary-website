@@ -147,6 +147,11 @@ var OriginAndNameComponent = /** @class */ (function () {
         this.whoOurLadyRewards = new content_item_1.DefaultContentItem("who-our-lady-rewards", "Who does Our Lady reward?", OriginAndNameComponent_1.originAndNamePath);
         this.kingAlphonsusStory = new content_item_1.DefaultContentItem("king-alphonsus-story", "What is the story of King Alphonsus and the Rosary he wore on his belt?", OriginAndNameComponent_1.originAndNamePath);
         this.whyFollowRosaryDevotions = new content_item_1.DefaultContentItem("why-follow-rosary-devotions", "Why should people who love the Blessed Virgin follow the example of King Alphonsus and the saints who were devoted to the Rosary?", OriginAndNameComponent_1.originAndNamePath);
+        // Enemies
+        this.enemies = new content_item_1.DefaultContentItem("enemies", "Enemies", OriginAndNameComponent_1.originAndNamePath);
+        this.whoAreEnemies = new content_item_1.DefaultContentItem("who-are-enemies", "Who are the enemies of the Rosary?", OriginAndNameComponent_1.originAndNamePath);
+        this.freethinkers = new content_item_1.DefaultContentItem("freethinkers", "Why have “freethinkers” who scorn religion and the Rosary absorbed the poisons of hell and have been inspired by the devil?", OriginAndNameComponent_1.originAndNamePath);
+        this.dangerOfFreethinkers = new content_item_1.DefaultContentItem("danger-of-freethinkers", "What is the danger of being like freethinkers who scorn the Rosary?", OriginAndNameComponent_1.originAndNamePath);
         // Other
         this.whyPerserveranceIsImportant = {
             id: "why-perserverence-is-important",

@@ -293,6 +293,27 @@ export class OriginAndNameComponent {
     "Why should people who love the Blessed Virgin follow the example of King Alphonsus and the saints who were devoted to the Rosary?",
     OriginAndNameComponent.originAndNamePath);
 
+  // Enemies
+  enemies = new DefaultContentItem(
+    "enemies",
+    "Enemies",
+    OriginAndNameComponent.originAndNamePath);
+
+  whoAreEnemies = new DefaultContentItem(
+    "who-are-enemies",
+    "Who are the enemies of the Rosary?",
+    OriginAndNameComponent.originAndNamePath);
+
+  freethinkers = new DefaultContentItem(
+    "freethinkers",
+    "Why have “freethinkers” who scorn religion and the Rosary absorbed the poisons of hell and have been inspired by the devil?",
+    OriginAndNameComponent.originAndNamePath);
+
+  dangerOfFreethinkers = new DefaultContentItem(
+    "danger-of-freethinkers",
+    "What is the danger of being like freethinkers who scorn the Rosary?",
+    OriginAndNameComponent.originAndNamePath);
+
   // Other
 
   whyPerserveranceIsImportant: ContentItem = {

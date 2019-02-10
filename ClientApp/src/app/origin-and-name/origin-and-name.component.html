@@ -132,6 +132,17 @@
     </li>
     <!-- /Marvels of the Rosary -->
 
+    <!-- Enemies -->
+    <li>
+      <app-a-doc [contentItem]="enemies"></app-a-doc>
+      <ul>
+        <app-li-doc [contentItem]="whoAreEnemies"></app-li-doc>
+        <app-li-doc [contentItem]="freethinkers"></app-li-doc>
+        <app-li-doc [contentItem]="dangerOfFreethinkers"></app-li-doc>
+      </ul>
+    </li>
+
+    <!-- /Enemies -->
     <li>
       <a [href]="whyPerserveranceIsImportant.path">{{ whyPerserveranceIsImportant.text }}</a>
     </li>
@@ -652,6 +663,13 @@
       Eighth Rose)
   </p>
   <!-- /Marvels of the Rosary -->
+
+  <!-- Enemies -->
+  <app-h2-doc [contentItem]="enemies"></app-h2-doc>
+  <app-h3-doc [contentItem]="whoAreEnemies"></app-h3-doc>
+  <app-h3-doc [contentItem]="freethinkers"></app-h3-doc>
+  <app-h3-doc [contentItem]="dangerOfFreethinkers"></app-h3-doc>
+  <!-- /Enemies -->
 
   <h2 [id]="whyPerserveranceIsImportant.id">{{ whyPerserveranceIsImportant.text }}</h2>
   <p>
