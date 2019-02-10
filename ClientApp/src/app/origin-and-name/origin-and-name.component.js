@@ -122,6 +122,13 @@ var OriginAndNameComponent = /** @class */ (function () {
         this.consequenceOfNeglect = new content_item_1.DefaultContentItem("consequence-of-neglect", "What was the consequence of neglecting God’s grace and the Rosary?", OriginAndNameComponent_1.originAndNamePath);
         this.whyBlessedAlanChosen = new content_item_1.DefaultContentItem("why-blessed-alan-chosen", "Why did Our Lady choose Blessed Alan de la Roche to revive the Rosary Confraternity?", OriginAndNameComponent_1.originAndNamePath);
         this.howAlanReceivedMessage = new content_item_1.DefaultContentItem("how-alan-recieved-message", "How did Blessed Alan receive his urgent message to reestablish the Rosary Confraternity?", OriginAndNameComponent_1.originAndNamePath);
+        // Confraternity
+        this.confraternity = new content_item_1.DefaultContentItem("confraternity", "Confraternity", OriginAndNameComponent_1.originAndNamePath);
+        this.kindsOfMembership = new content_item_1.DefaultContentItem("kinds-of-membership", "What kinds of membership are there in the Rosary Confraternity?", OriginAndNameComponent_1.originAndNamePath);
+        this.failMembershipObligations = new content_item_1.DefaultContentItem("fail-membership-obligations", "Is it a sin to fail to fulfill your membership obligation to say the Rosary?", OriginAndNameComponent_1.originAndNamePath);
+        this.rosaryClashesWithDuties = new content_item_1.DefaultContentItem("rosary-clashes-with-duties", "What if saying the Rosary clashes with your duties or health?", OriginAndNameComponent_1.originAndNamePath);
+        this.unableToSayRosary = new content_item_1.DefaultContentItem("unable-to-say-rosary", "Will you still receive the benefits of the Confraternity if you are unable to say the Rosary or genuinely forget?", OriginAndNameComponent_1.originAndNamePath);
+        this.failDueToCarelessness = new content_item_1.DefaultContentItem("fail-due-to-carelessness", "What if you fail to say the Rosary out of carelessness or lazyness?", OriginAndNameComponent_1.originAndNamePath);
         // Other
         this.whyPerserveranceIsImportant = {
             id: "why-perserverence-is-important",

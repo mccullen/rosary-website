@@ -81,6 +81,18 @@
       </ul>
     </li>
     <!-- /Blessed Alan -->
+    <!-- Confraternity -->
+    <li>
+      <app-a-doc [contentItem]="confraternity"></app-a-doc>
+      <ul>
+        <app-li-doc [contentItem]="kindsOfMembership"></app-li-doc>
+        <app-li-doc [contentItem]="failMembershipObligations"></app-li-doc>
+        <app-li-doc [contentItem]="rosaryClashesWithDuties"></app-li-doc>
+        <app-li-doc [contentItem]="unableToSayRosary"></app-li-doc>
+        <app-li-doc [contentItem]="failDueToCarelessness"></app-li-doc>
+      </ul>
+    </li>
+    <!-- /Confraternity -->
     <li>
       <a [href]="whyPerserveranceIsImportant.path">{{ whyPerserveranceIsImportant.text }}</a>
     </li>
@@ -348,6 +360,53 @@
     Our Lady also appeared to him to inspire him to preach the rosary more and more. 
     St. Dominic also appeared to him and told him how he preached the Holy Rosary and his sermons had borne great fruit and many people had been converted.
   </p>
+
+  <!-- Confraternity -->
+  <app-h2-doc [contentItem]="confraternity"></app-h2-doc>
+
+  <app-h3-doc [contentItem]="kindsOfMembership"></app-h3-doc>
+  <ul>
+    <li>Ordinary: Members who say the entire Rosary (fifteen decades) every week</li>
+    <li>Perpetual: Members who say the entire Rosary every year</li>
+    <li>Daily: Members who say the entire rosary every day</li>
+  </ul>
+
+  <app-h3-doc [contentItem]="failMembershipObligations"></app-h3-doc>
+  <p>
+    No. It is a voluntary and supererogatory act. 
+  </p>
+
+  <app-h3-doc [contentItem]="rosaryClashesWithDuties"></app-h3-doc>
+  <p>
+    You must give preference to the duties of your state in life and your health. This is in accordance with obedience. 
+  </p>
+
+  <app-h3-doc [contentItem]="unableToSayRosary"></app-h3-doc>
+  <p>
+    Yes, you will still receive the benefits and share in the graces and merits of your brothers and sisters who are saying it throughout the world.
+  </p>
+
+  <app-h3-doc [contentItem]="failDueToCarelessness"></app-h3-doc>
+  <p>
+    As long as you do not have formal contempt for it, you still do not sin. However, you forfeit your participation in the prayers, good works, and merits of the Confraternity.
+  </p>
+  <blockquote>
+    <p>
+      Because you
+      have not been faithful in things that are little and of supererogation, almost without knowing it you may fall
+      into the habit of neglecting big things, such as those duties which bind under pain of sin; for "He that scorns
+      small things shall fall little by little." (<i>Ecclus.</i> 19:1).
+    </p>
+    <cite>
+      St. Louis-Marie de Montfort,
+      <a [href]="app.secretOfTheRosaryLink">
+        The Admirable Secret of the Rosary,
+      </a>
+      Fifth Rose
+    </cite>
+  </blockquote>
+
+  <!-- /Confraternity -->
 
   <h2 [id]="whyPerserveranceIsImportant.id">{{ whyPerserveranceIsImportant.text }}</h2>
   <p>

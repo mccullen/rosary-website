@@ -184,6 +184,37 @@ export class OriginAndNameComponent {
     "How did Blessed Alan receive his urgent message to reestablish the Rosary Confraternity?",
     OriginAndNameComponent.originAndNamePath);
 
+  // Confraternity
+  confraternity: ContentItem = new DefaultContentItem(
+    "confraternity",
+    "Confraternity",
+    OriginAndNameComponent.originAndNamePath);
+
+  kindsOfMembership: ContentItem = new DefaultContentItem(
+    "kinds-of-membership",
+    "What kinds of membership are there in the Rosary Confraternity?",
+    OriginAndNameComponent.originAndNamePath);
+
+  failMembershipObligations = new DefaultContentItem(
+    "fail-membership-obligations",
+    "Is it a sin to fail to fulfill your membership obligation to say the Rosary?",
+    OriginAndNameComponent.originAndNamePath);
+
+  rosaryClashesWithDuties = new DefaultContentItem(
+    "rosary-clashes-with-duties",
+    "What if saying the Rosary clashes with your duties or health?",
+    OriginAndNameComponent.originAndNamePath);
+
+  unableToSayRosary = new DefaultContentItem(
+    "unable-to-say-rosary",
+    "Will you still receive the benefits of the Confraternity if you are unable to say the Rosary or genuinely forget?",
+    OriginAndNameComponent.originAndNamePath);
+
+  failDueToCarelessness = new DefaultContentItem(
+    "fail-due-to-carelessness",
+    "What if you fail to say the Rosary out of carelessness or lazyness?",
+    OriginAndNameComponent.originAndNamePath);
+
   // Other
 
   whyPerserveranceIsImportant: ContentItem = {
