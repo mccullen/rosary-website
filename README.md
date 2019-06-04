@@ -43,7 +43,6 @@ Template used: https://docs.microsoft.com/en-us/aspnet/core/client-side/spa/angu
  steps taken to add bootstrap.js and jquery
   - npm install jquery --save
   - npm install --save-dev @types/jquery
-  - Add jquery.min.js to angular-cli.json
+  - Add jquery.min.js to scripts in angular.json
   - npm install --save-dev @types/bootstrap
-  - declare var $: any;
-   - Note: You cannot do import * as $ from 'jquery' since typscript will give you an error if you use the bootstrap augmentations to jquery.
+  - Add "jquery" and "bootstrap" to compilerOptions.types in src/tsconfig.app.json
