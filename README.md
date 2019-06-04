@@ -45,4 +45,4 @@ Template used: https://docs.microsoft.com/en-us/aspnet/core/client-side/spa/angu
   - npm install --save-dev @types/jquery
   - Add jquery.min.js to scripts in angular.json
   - npm install --save-dev @types/bootstrap
-  - Add "jquery" and "bootstrap" to compilerOptions.types in src/tsconfig.app.json
+  - Add "jquery" and "bootstrap" to compilerOptions.types in src/tsconfig.json
